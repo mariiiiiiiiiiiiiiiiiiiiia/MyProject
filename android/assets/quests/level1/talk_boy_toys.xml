@@ -1,0 +1,23 @@
+<quest>
+    <onStart>
+        <open-door id="door1"/>
+        <change-dialog ghost="1" new_dialog="6"/>
+        <change-dialog ghost="2" new_dialog="7"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="6:1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <change-dialog ghost="1" new_dialog="8"/>
+            <set-quest-visibility quest_id="10" visibility="true"/>
+            <set-quest-visibility quest_id="9" visibility="true"/>
+            <start-quest name="find_Snejock.xml"/>
+            <start-quest name="find_Doll_view.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

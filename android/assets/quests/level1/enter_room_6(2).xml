@@ -1,0 +1,20 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="comeIn" room="6"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <start-monolog id="6"/>
+            <change-main-music file="songs/song2.mp3"/>
+            <set-search-description  rsid="1305" room="13" text="Тут лежит подарок Ивы."/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

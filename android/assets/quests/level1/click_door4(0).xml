@@ -1,0 +1,19 @@
+<quest>
+    <onStart>
+
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="click" room_subject_type="DOOR" sid="door4"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-quest-visibility quest_id="5" visibility="true"/>
+            <change-dialog ghost="1" new_dialog="3"/>
+            <start-quest name="talk_boy_key(0).xml"/>>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

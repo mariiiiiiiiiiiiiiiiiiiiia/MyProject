@@ -1,0 +1,31 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="9:1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="302" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="303" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="305" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="307" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="309" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="310" room="3" text="NULL"/>
+
+            <set-search-description  rsid="302" room="3" text="Теперь нужно отнести эту куклу Олеандру"/>
+            <set-search-description  rsid="303" room="3" text="Теперь нужно отнести эту куклу Олеандру"/>
+            <set-search-description  rsid="309" room="3" text="Теперь нужно отнести эту куклу Олеандру"/>
+            <set-search-description  rsid="307" room="3" text="Она прикреплена к железакe! Может быть, Олеандр поможет мне?"/>
+            <set-search-description  rsid="305" room="3" text="Не могу достать! Нужно попросить Олеадра это сделать."/>
+            <set-search-description  rsid="310" room="3" text="Не могу достать! Нужно попросить Олеадра это сделать."/>
+            <set-quest-visibility quest_id="12" visibility="true"/>
+            <start-quest name="find_Doll.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

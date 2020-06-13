@@ -1,0 +1,27 @@
+<quest>
+    <onStart>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="204" room="2" text="Так у Эмили темные волосы... Только бы не забыть."/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="302" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="303" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="305" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="307" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="309" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="310" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1"  room_subject_type="SUBJECT" sid="302,303,305,307,309,310" type="click" />
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <change-dialog ghost="1" new_dialog="9"/>
+        <set-quest-visibility quest_id="11" visibility="true"/>
+        <start-quest name="talk_boy_emily.xml"/>
+
+    </onEnd>
+</quest>

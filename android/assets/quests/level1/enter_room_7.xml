@@ -1,0 +1,26 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="comeIn" room="7"/>
+
+
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-special-description room_subject_type="DOOR" sid="door6" text="Прямо к Иве? Ну уж нет!"/>
+            <close-door id="door6"/>
+            <set-quest-visibility quest_id="33" visibility="true"/>
+            <start-quest name="search_table.xml"/>
+            <open-door id="door5"/>
+            <teleport-ghost ghost="2" room="6" x="7"/>
+            <change-start-point ghost="2" room="6" x="7"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+
+    </onEnd>
+</quest>

@@ -1,0 +1,143 @@
+{
+  "house_w": 2,
+  "house_h": 1,
+  "rooms":[
+    {
+      "background": "backgrounds/SheepGame.png",
+      "id": 1,
+      "x": 1,
+      "y": 1,
+      "subjects": [
+      ]
+    },
+    {
+      "background": "backgrounds/pink_tree.png",
+      "id": 2,
+      "x": 2,
+      "y": 1,
+      "subjects": [
+        {
+          "id": 101,
+          "background": "SR1/Bookshelf.png",
+          "name": "Шкаф",
+          "type": [
+            "search",
+            "speak"
+          ],
+          "subjects": [],
+          "description": [ "Письменный стол мальчика. Вот бы за ним порисовать!", "Может быть, внутри тебя что-то есть?"],
+          "x": 7.971,
+          "y": 0.316,
+          "w": 6.023,
+          "h": 3.817
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "door1",
+      "type": "typical",
+      "from": 1,
+      "to": 2,
+      "visible": "true"
+    },
+    {
+      "id": "door2",
+      "type": "typical",
+      "from": 2,
+      "to": 1,
+      "visible": "true"
+    }
+
+
+
+  ],
+
+  "hero" : {
+    "stand_image": "sheep",
+    "x": 12,
+    "animation": {
+      "atlas": "animation/animLela",
+      "anim_w": 4,
+      "anim_h": 1,
+      "vel": 0.3,
+      "anim_t":"LOOP"
+    },
+    "walk_anim" : {
+      "atlas": "animation/sheep_walk",
+
+      "vel": 0.1,
+      "anim_w": 4,
+      "anim_h": 1
+    },
+    "phrases": {
+      "found":["Кажется, я что-то нашла!",
+        "Я вижу что-то полезное.",
+        "Думаю, мне это пригодится."
+      ],
+      "not_found":["Здесь только хлам.",
+        "Абсолютно ничего интересного...",
+        "Мне здесь ничего не нравится!"
+      ]
+    }
+  },
+  "ghosts": [
+    {
+      "id": 1,
+      "name": "Олеандр",
+      "w": 1.926,
+      "h": 6.016,
+      "background": "NPC/Oleandr",
+      "face_image": "oleandr",
+      "animation": {
+        "atlas": "animation/animOleandr",
+        "anim_w": 4,
+        "anim_h": 1,
+        "vel": 0.3,
+        "anim_t":"LOOP"
+      },
+      "start_position": {
+        "room": 2,
+        "x": 13.252,
+        "y": 0.316
+      }
+    }
+  ],
+  "sheep" : {
+    "SleepPoints": 21,
+    "stand_image": "sheep",
+    "x": 7,
+    "y": 2,
+    "animation": {
+      "atlas": "animation/animLela",
+      "anim_w": 4,
+      "anim_h": 1,
+      "vel": 0.3,
+      "anim_t":"LOOP"
+    },
+    "walk_anim" : {
+      "atlas": "animation/sheep_walk",
+
+      "vel": 0.1,
+      "anim_w": 1,
+      "anim_h": 1
+    },
+    "sleep_anim": {
+      "atlas": "animation/sheep_sleep",
+      "anim_w": 1,
+      "anim_h": 1,
+      "vel": 0.3
+    },
+    "phrases": {
+      "found":["Кажется, я что-то нашла!",
+        "Я вижу что-то полезное.",
+        "Думаю, мне это пригодится."
+      ],
+      "not_found":["Здесь только хлам.",
+        "Абсолютно ничего интересного...",
+        "Мне здесь ничего не нравится!"
+      ]
+    }
+  }
+}

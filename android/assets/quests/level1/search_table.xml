@@ -1,0 +1,34 @@
+<quest>
+    <onStart>
+        <set-search-description  rsid="1305" room="13" text="..."/>
+    </onStart>
+
+    <triggers>
+
+        <trigger id="1" type="search"  sid="1305" />
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <pause-main-music/>
+            <start-cut-scene sceneId="3"/>
+            <sub-remove id="9"/>
+            <open-door id="door6"/>
+            <open-door id="door12"/>
+
+
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <turn-trigger enabled="false" tid="103"/>
+        <turn-trigger enabled="false" tid="104"/>
+        <turn-trigger enabled="false" tid="105"/>
+        <turn-trigger enabled="false" tid="106"/>
+        <open-door id="door6"/>
+        <open-door id="door13"/>
+        <change-background-roomsub name="SR13/TableGift" room="13" rsid="1305"/>
+        <start-cut-scene sceneId="2"/>
+        <set-quest-visibility quest_id="34" visibility="true"/>
+        <start-quest name="enter_room_6(2).xml"/>
+    </onEnd>
+</quest>

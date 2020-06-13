@@ -1,0 +1,22 @@
+<quest>
+    <onStart>
+        <change-dialog ghost="1" new_dialog="19"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="19:1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <teleport-ghost ghost="2" room="13" x="7"/>
+            <change-start-point ghost="2" room="13" x="7"/>
+            <change-dialog ghost="2" new_dialog="7"/>
+            <change-dialog ghost="1" new_dialog="20"/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

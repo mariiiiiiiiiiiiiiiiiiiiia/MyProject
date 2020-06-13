@@ -1,0 +1,18 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="13:1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-quest-visibility quest_id="14" visibility="true"/>
+            <start-quest name="enter_room_3_h.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <change-dialog ghost="1" new_dialog="11"/>
+    </onEnd>
+</quest>

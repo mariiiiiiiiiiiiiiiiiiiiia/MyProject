@@ -1,0 +1,962 @@
+<level>
+    <dialogs>
+        <dialog id="1" ghost_id="1" play="room:1" step="1">
+            <group id="1" options="false">
+                <text who = "ghost">А ты еще кто?</text>
+                <text who = "hero">Я... Меня зовут Леля. Я заблудилась, а на улице так темно и холодно, поэтому... </text>
+                <text who = "ghost">Меня это ни капельки не волнует!</text>
+                <text who = "hero">Но...</text>
+                <text who = "ghost"> Ты не видела Иву? Она все время прячется от меня!</text>
+                <text who = "ghost">Я искал по всему дому, даже спускался в подвал, но так и не нашел ее...</text>
+                <text who = "hero">Ива? Ах, знаю, знаю! </text>
+                <text who = "ghost">Правда?  </text>
+                <text who = "hero">Ивы любят влажность. Может быть, теперь она решила расти в ванной комнате?  </text>
+                <text who = "ghost">*огорченно вздыхает*  </text>
+                <text who = "ghost">Ива не дерево, она моя сестра, живой человек! </text>
+                <text who = "hero">Живой? Странно ... Я думала, здесь будут только призраки.</text>
+                <text who = "hero">Этот дом показался мне абсолютно заброшенным! </text>
+                <text who = "ghost">Это все твое воображение. Я живу в нем с рождения, так что заметил бы что-то неладное. </text>
+                <text who = "hero">А вот я уверена, что ты просто невнимательно искал!  </text>
+                <text who = "ghost">Вот же маленькая зануда! Ну, хорошо.   </text>
+                <text who = "ghost">Я разрешу тебе остаться в моем доме и дальше задавать свои глупые вопросы, только если ты поможешь найти Иву. </text>
+                <text who = "hero">Х-хорошо, большое спасибо! </text>
+                <text who = "ghost">Если увидишь ее - дай мне знать. </text>
+            </group>
+        </dialog>
+        <dialog id="2" ghost_id="1" step="2:4">
+            <group id="1" options="true">
+                <text who = "ghost">Ну чего тебе? </text>
+
+                <options>
+                    <option group="2" step="2:4">А как выглядит эта Ива?</option>
+                    <option group="3" step="2:4">Где мне ее искать?</option>
+                </options>
+            </group>
+
+            <group id="2" options="false">
+                <text who = "ghost">У нее очень мягкие руки.</text>
+                <text who = "ghost">А волосы ... словно шелк!</text>
+            </group>
+
+            <group id="3" options="false">
+                <text who = "ghost">В этом доме!</text>
+            </group>
+        </dialog>
+        <dialog id="3" ghost_id="1" step="2:4">
+            <group id="1" options="true">
+                <text who = "ghost">Ну чего тебе? </text>
+
+                <options>
+                    <option group="2" step="2:4">А как выглядит эта Ива?</option>
+                    <option group="3" step="2:4">Где мне ее искать?</option>
+                    <option group="4" step="4:4">Дверь в другую часть дома заперта!</option>
+                </options>
+            </group>
+
+            <group id="2" options="false">
+                <text who = "ghost">У нее очень мягкие руки.</text>
+                <text who = "ghost">А волосы ... словно шелк!</text>
+            </group>
+
+            <group id="3" options="false">
+                <text who = "ghost">В этом доме!</text>
+            </group>
+
+            <group id="4" options="false">
+                <text who = "ghost">К каждому замку есть ключ, только нужно внимательно его поискать.</text>
+                <text who = "ghost">Осмотри-ка комнаты, наверняка он где-нибудь завалялся.</text>
+                <text who = "hero"> Хорошо! </text>
+            </group>
+        </dialog>
+        <dialog id="4" ghost_id="1" play="room:1" step="1">
+            <group id="1" options="false">
+                <text who = "ghost">А ты еще кто?</text>
+                <text who = "hero">Я... Меня зовут Леля. Я заблудилась, а на улице так темно и холодно, поэтому... </text>
+                <text who = "ghost">Меня это ни капельки не волнует!</text>
+                <text who = "hero">Но...</text>
+                <text who = "ghost"> Ты не видела Иву? Она все время прячется от меня!</text>
+                <text who = "ghost">Я искал по всему дому, даже спускался в подвал, но так и не нашел ее...</text>
+                <text who = "hero">Ива? Ах, знаю, знаю! </text>
+                <text who = "ghost">Правда?  </text>
+                <text who = "hero">Ивы любят влажность. Может быть, теперь она решила расти в ванной комнате?  </text>
+                <text who = "ghost">*огорченно вздыхает*  </text>
+                <text who = "ghost">Ива не дерево, она моя сестра, живой человек! </text>
+                <text who = "hero">Живой? Странно ... Я думала, здесь будут только призраки.</text>
+                <text who = "hero">Этот дом показался мне абсолютно заброшенным! </text>
+                <text who = "ghost">Это все твое воображение. Я живу в нем с рождения, так что заметил бы что-то неладное. </text>
+                <text who = "hero">А вот я уверена, что ты просто невнимательно искал!  </text>
+                <text who = "ghost">Вот же маленькая зануда! Ну, хорошо.   </text>
+                <text who = "ghost">Я разрешу тебе остаться в моем доме и дальше задавать свои глупые вопросы, только если ты поможешь найти Иву. </text>
+                <text who = "hero"> Но как мне найти её, если дверь в другую часть дома закрыта?</text>
+                <text who = "ghost">Хм...Тебе просто стоит найти ключ. Он ржавый, ты его сразу узнаешь. </text>
+                <text who = "hero">Будет сделано!  </text>
+            </group>
+        </dialog>
+        <dialog id="5" ghost_id="2" >
+            <group id="1" options="false">
+                <text who="ghost">А? Что ты забыла в моем доме?!</text>
+                <text who="ghost"> Ну-ка живо убирайся отсюда, пока я сама тебя не вышвырнула!</text>
+            </group>
+        </dialog>
+        <dialog id="6" ghost_id="1">
+            <group id="1" options="false">
+                <text who="ghost">Ну и чего так долго?</text>
+                <text who="hero"> Я видела девушку. Она очень похожа на тебя! </text>
+                <text who="ghost">Тебе удалось найти Иву?  Надо было  привести её ко мне, бестолочь!</text>
+                <text who="hero"> Н-но твоя сестра выгнала меня, прежде чем я успела опомниться! Похоже, она чем-то  крайне недовольна... </text>
+                <text who="ghost">  Хм, точно! Ива не любит незваных гостей. Быть может, тебе стоит расположить  её к себе? </text>
+                <text who="hero"> Расположить к себе?  </text>
+                <text who="ghost"> Ну, да.  Например, найти и принести её любимые игрушки, Снежка и Эмили, в ее комнату. </text>
+                <text who="hero"> Звучит просто! Я все сделаю ... Ээм ...</text>
+                <text who = "ghost">Олеандр. Меня зовут Олеандр.</text>
+            </group>
+        </dialog>
+        <dialog id="7" ghost_id="2">
+            <group id="1" options="false">
+                <text who="ghost">Эй! А ты что тут делаешь? Ну-ка иди сюда...</text>
+            </group>
+        </dialog>
+        <dialog id="8" ghost_id="1" step="4">
+            <group id="1" options="true">
+                <text who = "ghost">Ты уже нашла нужные игрушки? </text>
+                <options>
+                    <option group="3" step="4">Пока нет, но я очень стараюсь!  </option>
+                    <option group="2" step="4">А как они выглядят?</option>
+                </options>
+            </group>
+            <group id="2" options="false">
+                <text who = "ghost">Снежок -  пушистый кролик. Ива часто играет с ним.</text>
+                <text who = "ghost">У куклы Эмили  большие глаза... И очень красивое платье!</text>
+            </group>
+            <group id="3" options="false">
+                <text who = "ghost"> Будь внимательна. Они прячутся где-то в этой части дома.</text>
+            </group>
+        </dialog>
+        <dialog id="9" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost"> Ты уже нашла нужные игрушки?</text>
+                <text who="hero">Не совсем. Там так много кукол, что глаза разбегаются!</text>
+                <text who="hero">Найти среди них ту самую Эмили довольно проблематично...</text>
+                <text who="ghost"> А от меня ты  что хочешь?  Я, между прочим, мальчик и в куклы не играю! Хотя...</text>
+                <text who="ghost"> Если ты покажешь мне Эмили, то я точно узнаю ее.</text>
+                <text who="hero">Неужели мне принести тебе всех кукол?  В мою сумочку не поместится больше одной.</text>
+                <text who="ghost">Хм, ну, единственное, что я помню, -  Эмили  боится высоты.</text>
+                <text who="hero">Разве куклы могут бояться высоты?</text>
+                <text who="ghost"> Пф, еще как!</text>
+                <text who="ghost">Если столкнешься с трудностями, так и быть, приходи ко мне.  Я помогу. Наверное...</text>
+                <text who="hero">Так точно!</text>
+            </group>
+        </dialog>
+        <dialog id="10" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Она  находится слишком высоко, я не могу до нее достать!</text>
+                <text who="ghost">Ты вообще слушала меня, маленькая бестолочь? Эмили боится высоты!</text>
+                <text who="hero">Но я была уверена...</text>
+                <text who="ghost">Моя сестра никогда бы не стала пугать свою любимую куклу!</text>
+                <text who="hero">Ох, ладно. Тогда мне необходимо подумать ещё.</text>
+            </group>
+        </dialog>
+        <dialog id="11" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Попробуй еще  раз. </text>
+            </group>
+        </dialog>
+        <dialog id="12" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">К кукле прикреплена какая-то железяка, которая держит ее. Как мне ее отсоединить?</text>
+                <text who="ghost">Это точно не Эмили!  Штатив покупали другой кукле.</text>
+                <text who="hero">Ты уверен? Может, Ива решила одолжить его?</text>
+                <text who="ghost"> Какая ты глупая!  Ива бы ни за что на свете не заставила Эмили  так долго стоять на одном месте!</text>
+                <text who="ghost">Иначе как бы она потом с ней играла? Знаешь, куклы тоже устают.</text>
+                <text who="hero">Ммм, звучит не убедительно, но раз ты в этом уверен... Придется подумать еще.</text>
+            </group>
+        </dialog>
+        <dialog id="13" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Похоже, это она.</text>
+                <text who="ghost">Хм... она чем-то мне напоминает любимую куклу сестры, но... мне кажется, ты ошиблась.  Неси следующую.</text>
+                <text who="ghost">Только не забудь положить эту куклу на место! Ты же не хочешь рассердить Иву еще больше?</text>
+                <text who="hero">Хорошо.</text>
+            </group>
+        </dialog>
+        <dialog id="14" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Похоже, это она.</text>
+                <text who="ghost">Хм... Я точно узнаю ее!</text>
+                <text who="ghost">Остался Снежок. Подойди ко мне, когда найдешь его.</text>
+            </group>
+        </dialog>
+        <dialog id="15" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты принесла кролика?</text>
+                <text who="hero">Ещё работаю над этим...</text>
+
+            </group>
+        </dialog>
+        <dialog id="16" ghost_id="1" >
+            <group id="1" options="false">
+                 <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Похоже, это она.</text>
+                <text who="ghost">Хм... Я точно узнаю ее!</text>
+                <text who="ghost">Что насчет Снежка?</text>
+                <text who="hero">Его я тоже успела найти!</text>
+                <text who="ghost">  Ну...  раз  у тебя есть все игрушки, ты можешь оставить их в комнате Ивы.</text>
+                <text who="ghost"> Просто усади их на диван, и не забудь спрятаться в шкафу!</text>
+                <text who="hero">Это еще зачем?</text>
+                <text who="ghost">Ох, какая же ты недогадливая! Конечно, чтобы увидеть её реакцию!</text>
+                <text who="ghost">Иначе как мы поймем, что наш план сработал?</text>
+                <text who="hero">Действительно...</text>
+            </group>
+        </dialog>
+        <dialog id="17" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Поторопись!</text>
+            </group>
+        </dialog>
+        <dialog id="18" ghost_id="2">
+            <group id="1" options="false">
+                <text who = "ghost">Что ты делаешь в моей комнате?!</text>
+                <text who = "hero">Я-я...</text>
+                <text who = "ghost">Ты ещё и трогала мои игрушки? Ну, держись!</text>
+                <text who = "hero">Это не я, а Олеандр!</text>
+                <text who = "ghost">Олеандр...</text>
+                <text who = "ghost">Да как ты вообще посмела даже заговорить с ним!</text>
+            </group>
+        </dialog>
+        <dialog id="19" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Как обстоят дела с Ивой?</text>
+                <text who="hero">Все намного хуже, чем мы ожидали! Она выглядела подавленной...</text>
+                <text who="ghost">Как ты умудрились расстроить мою сестру, недотепа?! </text>
+                <text who="hero">Мне кажется, это ты ее огорчил, а не я.</text>
+                <text who="ghost">Ха? О чем ты говоришь?</text>
+                <text who="hero">Она упоминула твоё имя. Между вами что-то произошло?</text>
+                <text who="ghost">Нет, мы всегда ладили с ней! Быть такого...</text>
+                <text who="ghost">Хотя подожди... Как я мог забыть!</text>
+                <text who="ghost">Я точно помню, как мы недавно украшали наш дом к какому-то празднику. Скорее всего, у Ивы был день рождения...</text>
+                <text who="ghost">Какой брат забудет о таком! Теперь понятно, почему Ива не хочет видеть меня!</text>
+                <text who="ghost">Нужно как можно скорее все исправить.</text>
+                <text who="hero">И как ты собираешься это сделать?</text>
+                <text who="ghost">Извиниться и вручить ей подарок, конечно же! Я точно помню, что купил его, только вот не знаю, куда положил...</text>
+                <text who="ghost">Ты должна помочь мне все исправить! Найди подарок и принеси его мне.</text>
+                <text who="hero">Так точно, капитан Олеандр!</text>
+            </group>
+        </dialog>
+        <dialog id="20" ghost_id="1" >
+            <group id="1" options="true">
+                <text who="ghost">Ну чего?</text>
+                <options>
+
+                    <option group="2"  step="6:8"> А что ты собираешься подарить Иве?</option>
+                    <option group="3" step="6:8" > Сколько исполняется твоей сестре?</option>
+                    <option group="4" step="6:8" > Подарок нужно упаковать. Только чем? </option>
+                </options>
+            </group>
+            <group id="2" options="false">
+                <text who="ghost">Ммм... вспомнил, парные кулоны!!</text>
+            </group>
+            <group id="3" options="false">
+                <text who="ghost"> Двенадцать лет!</text>
+                <text who="hero">Странно, она выглядит намного старше...!</text>
+            </group>
+            <group id="4" options="false">
+                <text who="ghost"> В доме очень много вещей, поэтому, поискав внимательно, ты что-нибудь обязательно найдешь.</text>
+                <text who="ghost"> Я бы мог дать тебе свою катушку с нитками, но, кажется, я куда-то её подевал...</text>
+                <text who="hero">Ох, нитки мне совершенно не нужны. Но все равно, спасибо.</text>
+            </group>
+
+        </dialog>
+        <dialog id="21" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Cнежка?</text>
+                <text who="hero">Да, он лежал в большой тумбочке!</text>
+                <text who="ghost"> Отлично. Раз  у тебя есть все игрушки, ты можешь оставить их в комнате Ивы.</text>
+                <text who="ghost"> Просто усади их на диван, и не забудь спрятаться в шкафу!</text>
+                <text who="hero">Это еще зачем?</text>
+                <text who="ghost">Ох, какая же ты недогадливая! Конечно, чтобы увидеть её реакцию!</text>
+                <text who="ghost">Иначе как мы поймем, что наш план сработал?</text>
+                <text who="hero">Действительно...</text>
+            </group>
+        </dialog>
+        <dialog id="22" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты принесла подарок?</text>
+                <text who="hero">И даже красиво его упаковала!</text>
+                <text who="ghost">Тогда вновь повторяем наш план. </text>
+                <text who="ghost">Положи подарок на её стол и спрячься в шкафу.</text>
+                <text who="hero">Ох...Ладно. Надеюсь, она уже ушла оттуда.</text>
+                <text who="ghost">Точно! Совсем забыл. Держи - это ключ от подвала.</text>
+                <text who="ghost">Возможно, он пригодится тебе.</text>
+            </group>
+        </dialog>
+        <dialog id="23" ghost_id="2">
+            <group id="1" options="false">
+                <text who = "ghost">Э-Эмили? Снежок? Как вы здесь оказались, я точно помню...</text>
+                <text who = "ghost">Подождите-ка... </text>
+                <text who = "ghost">...</text>
+                <text who = "ghost">Ох, Олеандр...</text>
+            </group>
+        </dialog>
+        <dialog id="24" ghost_id="2">
+            <group id="1" options="false">
+                <text who = "ghost">Эй, ты!</text>
+                <text who = "hero">Н-не трогай меня... Я не пойду на улицу!</text>
+                <text who = "ghost">Постой!</text>
+            </group>
+        </dialog>
+        <dialog id="25" ghost_id="2">
+            <group id="1" options="false">
+                <text who = "ghost">Я лишь хотела...</text>
+                <text who = "ghost">Поговорить с тобой.</text>
+                <text who = "ghost">Ну вот, убежала...Возможно, мне все-таки не стоит рассказывать ей об этом.</text>
+            </group>
+        </dialog>
+        <dialog id="26" ghost_id="1" step="10">
+        <group id="1" options="true">
+            <text who = "ghost">Ива все еще сердита? </text>
+            <text who = "hero">Я не уверена в этом... Но пjcлушай, есть что-то очень-очень важное, о чем я не могу молчать. </text>
+            <text who = "ghost">Ммм? Говори!  </text>
+
+            <options>
+                <option group="2" step="10">Мне совершенно не нравится этот дом...</option>
+                <option group="3" step="10">Ты странный!</option>
+                <option group="4" step="10">Я думаю, с Ивой не все в порядке.</option>
+            </options>
+        </group>
+
+            <group id="2" options="false">
+                <text who = "ghost">Тебя здесь никто не держит, если не забыла. Можешь идти на мороз! </text>
+                <text who = "hero">Я говорю совершенно о другом.</text>
+                <text who = "hero">В некоторых комнатах абсолютно некомфортно! Я даже видела череп на одной из стен.</text>
+                <text who = "ghost">Череп? Что за бред! </text>
+                <text who = "hero">Это чистая правда. А картины жуткие и страшные... Одна из них плачет! </text>
+                <text who = "ghost">Прекра... </text>
+                <text who = "hero">Даже куклы в подвале движутся сами по себе! </text>
+                <text who = "ghost">Я устал от твоих сказок, бестолочь! Если тебе не хочется мирить меня с Ивой, то так и скажи. </text>
+                <text who = "ghost">Только не думай, что после этого я разрешу тебе остаться. </text>
+                <text who = "ghost">Не приставай ко мне больше с такой чепухой! </text>
+
+            </group>
+
+            <group id="3" options="false">
+                <text who = "ghost">Ты уверена, что стоит говорить такое мне, маленькая наглая девочка?</text>
+                <text who = "ghost">Между прочим, я разрешил тебе переночевать здесь, а не прогнал на мороз!</text>
+                <text who = "hero">Я говорю совершенно о другом.</text>
+                <text who = "hero">Ты не знаметил, что твои воспоминания путаются?</text>
+                <text who = "hero">Например, Иве совершенно не двенадцать, ей намного больше лет!</text>
+                <text who = "ghost"> Что за бред? Быть такого не может! </text>
+                <text who = "hero">А ещё почему ты не покидаешь эту комнату? Ты ведь мог уже давнo встретить Иву, если бы пошел со мной.</text>
+                <text who = "ghost">Я просто... Не хочу! </text>
+                <text who = "hero">А, может быть, ты просто-напросто не можешь? </text>
+                <text who = "ghost">Ну все, довольно! </text>
+                <text who = "ghost">Я устал от твоих сказок, бестолочь! Если тебе не хочется мирить меня с Ивой, то так и скажи. </text>
+                <text who = "ghost">Только не думай, что после этого я разрешу тебе остаться. </text>
+                <text who = "ghost">Не приставай ко мне больше с такой чепухой! </text>
+            </group>
+
+            <group id="4" options="false">
+             <text who = "ghost">Ива моя сестра, не забывай!</text>
+             <text who = "ghost">Так что несколько раз подумай, прежде чем заявлять подобное мне!</text>
+             <text who = "hero">Я говорю совершенно о другом.</text>
+             <text who = "hero">Разве ты не заметил, что она ведет себя странно?</text>
+             <text who = "hero">Например, избегает тебя без видимой на то причины.</text>
+             <text who = "hero">К тому же твоей сестре далеко уже не двенадцать лет!</text>
+            <text who = "ghost"> Ты несешь чушь! Быть такого не может! </text>
+            <text who = "hero">А ещё мне показалось, что она парит над землей!</text>
+            <text who = "ghost">Прекра... </text>
+            <text who = "hero">Эта девушка то исчезает, то появляется непонятно откуда! Может быть, она...</text>
+            <text who = "ghost">Ну все, довольно! </text>
+            <text who = "ghost">Я устал от твоих сказок, бестолочь! Если тебе не хочется мирить меня с Ивой, то так и скажи. </text>
+            <text who = "ghost">Только не думай, что после этого я разрешу тебе остаться. </text>
+            <text who = "ghost">Не приставай ко мне больше с такой чепухой! </text>
+        </group>
+        </dialog>
+        <dialog id="27" ghost_id="1">
+            <group id="1" options="false">
+                <text who = "ghost">Отстань от меня, я сейчас не в духе!</text>
+            </group>
+        </dialog>
+        <dialog id="28" ghost_id="1" step="10">
+            <group id="1" options="true">
+                <text who = "ghost">Ива все еще сердита? </text>
+                <text who = "hero">Я не уверена в этом... Но пocлушай, есть что-то очень-очень важное, о чем я не могу молчать. </text>
+                <text who = "ghost">Ммм? Говори!  </text>
+
+                <options>
+                    <option group="2" step="10">Мне совершенно не нравится этот дом...</option>
+                    <option group="3" step="10">Ты странный!</option>
+                    <option group="4" step="10">Я думаю, с Ивой не все в порядке.</option>
+                </options>
+            </group>
+
+            <group id="2" options="false">
+                <text who = "ghost">Тебя здесь никто не держит, если не забыла. Можешь идти на мороз! </text>
+                <text who = "hero">Я говорю совершенно о другом.</text>
+                <text who = "hero">В некоторых комнатах абсолютно некомфортно! Я даже видела череп на одной из стен.</text>
+                <text who = "ghost">Череп? Что за бред! </text>
+                <text who = "hero">Это чистая правда. А картины жуткие и страшные... Одна из них плачет! </text>
+                <text who = "ghost">Прекра... </text>
+                <text who = "hero">Даже куклы в подвале движутся сами по себе! </text>
+                <text who = "ghost">Я устал от твоих сказок, бестолочь! Если тебе не хочется мирить меня с Ивой, то так и скажи. </text>
+                <text who = "ghost">Только не думай, что после этого я разрешу тебе остаться. </text>
+                <text who = "ghost">Не приставай ко мне больше с такой чепухой! </text>
+
+            </group>
+
+            <group id="3" options="false">
+                <text who = "ghost">Ты уверена, что стоит говорить такое мне, маленькая наглая девочка?</text>
+                <text who = "ghost">Между прочим, я разрешил тебе переночевать здесь, а не прогнал на мороз!</text>
+                <text who = "hero">Я говорю совершенно о другом.</text>
+                <text who = "hero">Ты не знаметил, что твои воспоминания путаются?</text>
+                <text who = "ghost"> Что за бред? Быть такого не может! </text>
+                <text who = "ghost"> Мне кажется, что это так! </text>
+                <text who = "hero">А ещё почему ты не покидаешь эту комнату? Ты ведь мог уже давнo встретить Иву, если бы пошел со мной.</text>
+                <text who = "ghost">Я просто... Не хочу! </text>
+                <text who = "hero">А, может быть, ты просто-напросто не можешь? </text>
+                <text who = "ghost">Ну все, довольно! </text>
+                <text who = "ghost">Я устал от твоих сказок, бестолочь! Если тебе не хочется мирить меня с Ивой, то так и скажи. </text>
+                <text who = "ghost">Только не думай, что после этого я разрешу тебе остаться. </text>
+                <text who = "ghost">Не приставай ко мне больше с такой чепухой! </text>
+            </group>
+
+            <group id="4" options="false">
+                <text who = "ghost">Ива моя сестра, не забывай!</text>
+                <text who = "ghost">Так что несколько раз подумай, прежде чем заявлять подобное мне!</text>
+                <text who = "hero">Я говорю совершенно о другом.</text>
+                <text who = "hero">Разве ты не заметил, что она ведет себя странно?</text>
+                <text who = "hero">Например, избегает тебя без видимой на то причины.</text>
+                <text who = "ghost"> Ты несешь чушь! Быть такого не может! </text>
+                <text who = "hero">А ещё мне показалось, что она парит над землей!</text>
+                <text who = "ghost">Прекра... </text>
+                <text who = "hero">Эта девушка то исчезает, то появляется непонятно откуда! Может быть, она...</text>
+                <text who = "ghost">Ну все, довольно! </text>
+                <text who = "ghost">Я устал от твоих сказок, бестолочь! Если тебе не хочется мирить меня с Ивой, то так и скажи. </text>
+                <text who = "ghost">Только не думай, что после этого я разрешу тебе остаться. </text>
+                <text who = "ghost">Не приставай ко мне больше с такой чепухой! </text>
+            </group>
+        </dialog>
+        <dialog id="100" ghost_id="2" >
+            <group id="1" options="true">
+                <text who="ghost">Ах, вот ты где, маленькая девочка.</text>
+                <text who="hero">Ива, о чем ты желала  поговорить?</text>
+                <text who="ghost">Я всего лишь хотела попросить тебя добровольно покинуть этот дом. </text>
+                <text who="ghost">Тебе не нужно пытаться помирить меня и Олендра.</text>
+                <text who="hero">Но я прекрасно знаю,  почему все это случилось!</text>
+                <text who="ghost">О чем ты говоришь?</text>
+                <options>
+
+                    <option group="2"  step="13">Ты ведь винишь себя до сих пор? И поэтому прячешься от него.</option>
+                    <option group="3" step="13" >Олеандр сильно обидел тебя! Поэтому ты не хочешь его видеть.</option>
+                    <option group="4" step="13" >Все дело в этом доме! Я видела ту комнату в подвале!</option>
+                </options>
+            </group>
+            <group id="2" options="true">
+                <text who="ghost">За что же, интересно...</text>
+                <text who="hero">Я провела небольшое расследование и выяснила!</text>
+                <text who="ghost">Ну давай, я внимательно слушаю.</text>
+                <options>
+                <option group="5"  step="13">Ты порвала рисунок Олеандра! Тот, что висит на стене!</option>
+                <option group="6" step="13" >Твоя глупая обида привела к печальному исходу!</option>
+                </options>
+            </group>
+
+            <group id="3" options="true">
+            <text who="ghost"> Обидел?</text>
+            <text who="ghost">Мне даже самой интересно, что же он такого сделал!</text>
+                <options>
+                    <option group="111" step="13" >Я видела рисунок. Это ведь он его испортил и порвал! </option>
+                    <option group="9" step="13" >Я видела порванный рисунок, заляпанный соком. Это ведь он его порвал? </option>
+                    <option group="16" step="13" >Олеандр не поздравил тебя с днем рождения. </option>
+
+                </options>
+            </group>
+
+            <group id="4" options="false">
+                <text who="ghost">Да, дом действительно странный, я сама даже не знаю толком, что в нем происходит.</text>
+                <text who="ghost">Но этот никак не связано с нашей  историей.</text>
+                <text who="ghost">К сожалению, я вынуждена тебя выставить.</text>
+
+            </group>
+
+
+            <group id="5" options="true">
+            <text who="ghost">Хах? Интересно узнать, на что же я была так обижена, что порвала рисунок.</text>
+                <options>
+            <option group="15"  step="13">Олеандр сломал вытяжку. </option>
+            <option group="16" step="13" >Олеандр не поздравил тебя с днем рождения. </option>
+
+                </options>
+            </group>
+
+            <group id="6" options="true">
+                <text who="ghost">Обида... и на что я, по-твоему, обиделась? </text>
+                <text who="hero">Это легко!</text>
+                <options>
+                <option group="8"  step="13">Я видела порванный рисунок, заляпанный соком. Это ведь он его пролил?</option>
+                <option group="9" step="13" >Я видела порванный рисунок, заляпанный соком. Это ведь он его порвал? </option>
+                <option group="109" step="13" >Я видела  рисунок. Это ведь он его испортил и порвал! </option>
+                </options>
+            </group>
+            <group id="8" options="true">
+                <text who="ghost">Хм, любимый томатный сок, как без него?  Но порванный рисунок  - не такое уж и горе! </text>
+                <text who="hero">Да, дело не в самом рисунке, а в последствиях.</text>
+                <options>
+                <option group="11"  step="13">Ты погубила Олеандра.</option>
+                <option group="12" step="13" >Ты погубила себя. </option>
+                <option group="13" step="13" >Ты погубила и себя, и любимого брата.  </option>
+                </options>
+            </group>
+            <group id="9" options="true">
+                <text who="hero">Из-за того, что ты испачкала его, а ведь он так старался!  </text>
+                <text who="hero">И тебе не понравилось, что он повел себя, как ребенок!</text>
+                <text who="ghost">Хах, порванный рисунок  - не такое уж и горе! </text>
+                <text who="hero">Да, дело не в самом рисунке, а в последствиях.</text>
+                <options>
+                <option group="115"  step="13">Олеандр  погубил себя.</option>
+                <option group="116" step="13" >Олеандр погубил тебя.  </option>
+                <option group="117" step="13" >Олеандр погубил и себя, и любимую  сестру.</option>
+                </options>
+            </group>
+            <group id="109" options="false">
+            <text who="ghost">Хах? Раз Олеандр поступил так со своим же рисунком, почему я должна винить себя и в чем?  </text>
+            <text who="hero">Ну...</text>
+            <text who="ghost">Да, действительно невероятная история! </text>
+            <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+            <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+
+            <group id="11" options="true">
+                <text who="ghost">Как...  как он погиб? </text>
+                <options>
+                <option group="106"  step="13">Отравился газом. </option>
+                <option group="107" step="13" >В результате пожара в подвале. </option>
+                <option group="108" step="13" >Отравился  ядом.   </option>
+                </options>
+            </group>
+            <group id="12" options="true">
+                <text who="ghost">Как...  как я погибла? </text>
+                <options>
+                <option group="103"  step="13">Отравилась газом. </option>
+                <option group="104" step="13" >В результате пожара в подвале. </option>
+                <option group="105" step="13" >Отравилась  ядом.   </option>
+                </options>
+            </group>
+            <group id="13" options="true">
+                <text who="hero">Я прочла письмо. Вы ведь оба погибли. </text>
+                <text who="ghost">Как...  как мы погибли? </text>
+                <options>
+                <option group="14"  step="13">Отравились газом. </option>
+                <option group="101" step="13" >В результате пожара в подвале. </option>
+                <option group="102" step="13" >Отравились  ядом.   </option>
+                </options>
+            </group>
+
+            <group id="14" options="false">
+                <text who="hero">На двери в кухню висят полицейские ленты. В доме окон нет. </text>
+                <text who="hero">Вытяжка сломалась  -  я видела список дел на столе. Вполне логично. </text>
+                <text who="ghost">Да... ты действительно все знаешь... </text>
+                <text who="ghost">В тот день Олеандр праздновал свое десятилетие.  </text>
+                <text who="ghost">Я нарисовала ему рисунок и испекла торт – он больше всего любил получать  подарки, сделанные собственными руками.  </text>
+                <text who="ghost">Помню, Олеандр сидел на кухне и пил свой любимый томатный сок...  </text>
+                <text who="ghost">Почему я именно в этот момент решила отдать ему рисунок?  </text>
+                <text who="ghost"> Ведь в следующую секунду брат по неосторожности пролил на содержимое стакана! Я ужасно разозлилась и... и порвала лист на две части.   </text>
+                <text who="ghost">Больше мы не виделись. </text>
+                <text who="ghost">Когда я пришла на кухню поиграть с куклами в чаепитие, там никого не было.  </text>
+                <text who="ghost">Я включила газ и хотела поставить чайник, но вдруг заиграла музыка. Это Олеандр включил ее.   </text>
+                <text who="ghost">Я пыталась найти его, чтобы извиниться, но он бегал от меня по дому. И совсем забыла про газ... </text>
+                <text who="ghost">Как ты понимаешь, в доме без окон и вытяжки газ быстро распространялся. </text>
+                <text who="ghost">В один момент моя голова закружилась, и я потеряла сознание.  </text>
+                <text who="ghost">Когда я очнулась, то забыла обо всем. Мои воспоминания путались... но потом все вернулось на свои места. </text>
+                <text who="ghost">Я виновата в том, что теперь Олеандр навеки заточен в этом ужасном доме, полном приведениями.  </text>
+                <text who="ghost">Боюсь, он  не простит меня, когда узнает правду... </text>
+                <text who="hero">Я обязательно помогу тебе помириться с братом!  </text>
+                <text who="ghost">Спасибо, маленькая девочка. Но пока, думаю, кое-кому лучше не знать правды. </text>
+                <text who="ghost">Со временем он сам все поймет.</text>
+                <text who="hero">В этом доме есть и друге призраки?</text>
+                <text who="ghost">Конечно! Этот дом действительно огромный! </text>
+                <text who="ghost">Нужно лишь уметь перемещаться в разные его… если можно так сказать, части. </text>
+                <text who="hero">Ты научишь меня? </text>
+                <text who="ghost">Конечно! </text>
+
+            </group>
+
+            <group id="101" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  </text>
+                <text who="hero">В подвале окон нет, а двери постоянно заперты. </text>
+                <text who="hero">Ты устроила пожар, когда  готовила праздничный торт, и вы не смогли спастись.</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="102" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты. </text>
+                <text who="hero">В подвале совсем рядом с продуктами хранится крысиный яд.  </text>
+                <text who="hero">Ты перепутала упаковки  и приготовила смертельное угощение.</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="103" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  В доме окон нет. </text>
+                <text who="hero">Вытяжка сломалась  -  я видела список дел на столе. Вполне логично. </text>
+                <text who="hero">Олеандр не видит тебя, потому что ты мертва! </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="104" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  </text>
+                <text who="hero">В подвале окон нет, а двери постоянно заперты. </text>
+                <text who="hero">Ты устроила пожар, когда  готовила праздничный торт, и не смогла выбраться!</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="105" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты. </text>
+                <text who="hero">В подвале совсем рядом с продуктами хранится крысиный яд.  </text>
+                <text who="hero">Ты перепутала упаковки и отведала смертельное угощение! </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="106" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  В доме окон нет. </text>
+                <text who="hero">Вытяжка сломалась  -  я видела список дел на столе. Вполне логично. </text>
+                <text who="hero">Призрак Олеандра преследует тебя все это время! </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="107" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  </text>
+                <text who="hero">В подвале окон нет, а двери постоянно заперты. </text>
+                <text who="hero">Ты устроила пожар, когда  готовила праздничный торт, и Олеандр, спасая тебя,  погиб.</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="108" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты. </text>
+                <text who="hero">В подвале совсем рядом с продуктами хранится крысиный яд.  </text>
+                <text who="hero">Ты перепутала упаковки  и приготовила смертельное угощение. Бедный Олеандр! </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+
+            <group id="15" options="true">
+                <text who="hero">На тебя с Олеандром никто не обращал внимания, поэтому так он хотел, чтобы его заметили родители.</text>
+                <text who="hero">Ты и он ведь страдали от одиночества, поэтому у вас так много игрушек, да?  </text>
+                <text who="ghost">Ахахаха, забавно. Тогда почему же я виню себя? Ты сама сказала об этом в самом начале!</text>
+                <options>
+                    <option group="110"  step="13">Ты отравила Олеандра. </option>
+                    <option group="110" step="13" >Ты закрыла Олеандра, когда произошел пожар на кухне. </option>
+                </options>
+            </group>
+            <group id="16" options="true">
+                <text who="hero">На тебя с Олеандром никто не обращал внимания, поэтому так он хотел, чтобы его заметили родители..</text>
+                <text who="hero">Ты и он ведь страдали от одиночества, поэтому у вас так много игрушек, да?  </text>
+                <text who="hero">В конце концов, даже он перестал общаться с тобой, и в итоге не поздравил с днем рождения! </text>
+                <text who="ghost">Ахахаха, забавно. Тогда почему же я виню себя? Ты сама сказала об этом в самом начале!</text>
+                <options>
+                    <option group="110"  step="13">Ты отравила Олеандра. </option>
+                    <option group="110" step="13" >Ты закрыла Олеандра, когда произошел пожар на кухне. </option>
+                </options>
+            </group>
+
+            <group id="110" options="false">
+                <text who="hero">Все улики указывают на это, поэтому нет смысла отрицать данный факт, Ива. </text>
+                <text who="hero">Призрак Олеандра преследует тебя все это время! </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+
+            <group id="111" options="false">
+                <text who="hero">Все улики указывают на это, поэтому нет смысла отрицать данный факт, Ива. </text>
+                <text who="ghost">То есть ты считаешь, что я избегаю Олеандра из-за рисунка?</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="115" options="true">
+                <text who="ghost">Как...  как он погиб? </text>
+                <options>
+                    <option group="1151"  step="13">Отравился газом. </option>
+                    <option group="1152" step="13" >В результате пожара в подвале. </option>
+                    <option group="1153" step="13" >Отравился  ядом.   </option>
+                </options>
+            </group>
+            <group id="116" options="true">
+                <text who="ghost">Как...  как я погибла? </text>
+                <options>
+                    <option group="1161"  step="13">Отравилась газом. </option>
+                    <option group="1162" step="13" >В результате пожара в подвале. </option>
+                    <option group="1163" step="13" >Отравилась  ядом.   </option>
+                </options>
+            </group>
+            <group id="117" options="true">
+                <text who="hero">Я прочла письмо. Вы ведь оба погибли. </text>
+                <text who="ghost">Как...  как мы погибли? </text>
+                <options>
+                    <option group="1171"  step="13">Отравились газом. </option>
+                    <option group="1172" step="13" >В результате пожара в подвале. </option>
+                    <option group="1173" step="13" >Отравились  ядом.   </option>
+                </options>
+            </group>
+            <group id="1172" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  </text>
+                <text who="hero">В подвале окон нет, а двери постоянно заперты. </text>
+                <text who="hero">Он устроил пожар, когда  готовил праздничный торт, и вы не смогли спастись.</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1173" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты. </text>
+                <text who="hero">В подвале совсем рядом с продуктами хранится крысиный яд.  </text>
+                <text who="hero">Олеандр перепутал упаковки, и вы отведали смертельное угощение!</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1171" options="false">
+                <text who="hero">На двери в кухню висят полицейские ленты. В доме окон нет. </text>
+                <text who="hero">Вытяжка сломалась  -  я видела список дел на столе. Вполне логично. </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1161" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  В доме окон нет. </text>
+                <text who="hero">Вытяжка сломалась  -  я видела список дел на столе. Вполне логично. </text>
+                <text who="hero">Олеандр не видит тебя, потому что ты мертва! </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1162" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  </text>
+                <text who="hero">В подвале окон нет, а двери постоянно заперты. </text>
+                <text who="hero">Он устроил пожар, когда  готовил праздничный торт, и ты не смогла выбраться!</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1163" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты. </text>
+                <text who="hero">В подвале совсем рядом с продуктами хранится крысиный яд.  </text>
+                <text who="hero">Олеандр перепутал упаковки, и ты отведала смертельное угощение! Мне так жаль тебя!</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1151" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  В доме окон нет. </text>
+                <text who="hero">Вытяжка сломалась  -  я видела список дел на столе. Вполне логично. </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1152" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты.  </text>
+                <text who="hero">В подвале окон нет, а двери постоянно заперты. </text>
+                <text who="hero">Он устроил пожар, когда  готовил праздничный торт, и в реузльтате  погиб.</text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+            <group id="1153" options="false">
+                <text who="hero"> На двери в кухню висят полицейские ленты. </text>
+                <text who="hero">В подвале совсем рядом с продуктами хранится крысиный яд.  </text>
+                <text who="hero">Он перепутал упаковки  и отведал смертельное угощение. Бедный Олеандр! </text>
+                <text who="ghost">Да, действительно невероятная история! </text>
+                <text who="ghost">Жаль, что она не имеет никакого отношения ко мне и моему брату. </text>
+                <text who="ghost">Тебе действительно лучше уйти, несостоявшийся Шерлок Холмс. </text>
+            </group>
+        </dialog>
+    </dialogs>
+    <monologs>
+        <monolog id="1">
+            <text>Как хорошо, что я наткнулась на этот дом.</text>
+            <text>Эй! Здесь есть кто-нибудь?></text>
+            <text>...</text>
+            <text>Кажется, здесь могут быть только призраки.></text>
+            <text>По крайней мере, мне есть, где переждать ночь.></text>
+        </monolog>
+        <monolog id="2">
+            <text>Думаю, больше не стоит подходить к Олеандру насчет этой куклы.</text>
+            <text>Хотя...></text>
+        </monolog>
+        <monolog id="3">
+            <text>Выражения лица Ивы стало печальным, когда я упомянула её брата. </text>
+            <text>Мне нужно рассказать обо всем Олеандру.</text>
+        </monolog>
+        <monolog id="4">
+            <text>Подарок готов. </text>
+            <text>Нужно поскорее показать его Олеандру.</text>
+        </monolog>
+        <monolog id="5">
+            <text>Какая странная песня...</text>
+            <text>Она доносится из комнаты Ивы.</text>
+            <text>Но теперь я знаю, что сестра Олендра снова в ней.</text>
+            <text>Вот бы выманить её оттуда!</text>
+        </monolog>
+        <monolog id="6">
+            <text> Я так испугалась, что даже пошевелиться не смогла... а надо было  к ней выйти!</text>
+            <text>И почему мне кажется, что происходит вокруг что-то странное?</text>
+            <text>Весь дом выглядит так пугающе! Особенно эти жуткие надписи и картины.</text>
+            <text>Да и Олеандр немного странноват...</text>
+            <text>Мне стоит поговорить с ним.</text>
+        </monolog>
+
+        <monolog id="7">
+            <text>С Олеандром бесполезно разговаривать!</text>
+            <text>Думаю, мне все-таки стоит найти Иву и узнать, что происходит.</text>
+            <text>Но для начала следует провести небольшое расследование!</text>
+            <text>Главное, не упустить какую-нибудь важную деталь!</text>
+            <text>Только после этого стоит поговорить с сестрой Олеандра. Возможно, придется снова использовать трюк с кассетой. </text>
+            <text>Мне кажется, она до сих пор там, поэтому мне нет необходимости брать новую. </text>
+            <text>После этого девушка уж  точно явится! </text>
+        </monolog>
+    </monologs>
+
+    <triggers>
+        <trigger id="102" type="comeIn" room="4"/>
+        <trigger id="101" type="catch" />
+
+        <trigger id="103" type="comeIn" room="6"/>
+
+        <trigger id="104" type="comeIn" room="13"/>
+        <trigger id="105" type="comeIn" room="7"/>
+        <trigger id="106" type="comeIn" room="5"/>
+    </triggers>
+
+    <trigger-listeners>
+
+        <listener tid="101">
+            <open-door id="door14"/>
+        </listener>
+        <listener tid="102">
+            <close-door id="door14"/>
+        </listener>
+        <listener tid="103">
+            <pause-main-music/>
+            <change-another-sound file="songs/iva_sing.mp3"/>
+            <turn-trigger enabled="true" tid="104"/>
+            <turn-trigger enabled="true" tid="105"/>
+            <turn-trigger enabled="true" tid="106"/>
+        </listener>
+        <listener tid="104">
+            <turn-trigger enabled="true" tid="103"/>
+            <resume-main-music/>
+            <stop-another-sound/>
+            <turn-trigger enabled="false" tid="104"/>
+            <turn-trigger enabled="false" tid="103"/>
+        </listener>
+        <listener tid="105">
+            <resume-main-music />
+            <stop-another-sound/>
+            <turn-trigger enabled="true" tid="103"/>
+            <turn-trigger enabled="false" tid="105"/>
+        </listener>
+        <listener tid="106">
+            <resume-main-music />
+            <turn-trigger enabled="true" tid="103"/>
+            <turn-trigger enabled="false" tid="106"/>
+            <stop-another-sound/>
+        </listener>
+
+    </trigger-listeners>
+
+    <steps>
+        <step num="1">
+            <quest id="0" name="enter_room_4.xml" visible="true"/>
+
+        </step>
+        <step num="2">
+            <quest id="1" name="enter_room_1.xml" visible="true"/>
+            <quest id="2" name="enter_room_1(1).xml" visible="false"/>
+        </step>
+
+        <step num="3">
+
+            <quest id="3" name="talk_boy_1st.xml" visible="true"/> <!--говорим с призраком первый раз -->
+            <quest id="4" name="click_door4(0).xml" visible="false"/>
+            <quest id="5" name="talk_boy_key(0).xml" visible="false"/><!--говорим с призраком о ключе-->
+        </step>
+        <step num="4">
+            <quest id="6" name="find_key.xml" visible="true"/>
+            <quest id="7" name="enter_room_5.xml" visible="false"/>
+            <quest id="20" name="to_be_cached.xml" visible="false"/>
+        </step>
+
+        <step num="5">
+            <quest id="8" name="talk_boy_toys.xml" visible="true"/>
+            <quest id="9" name="find_Snejock.xml" visible="false"/>
+            <quest id="10" name="find_Doll_view.xml" visible="false"/>
+            <quest id="11" name="talk_boy_emily.xml" visible="false"/>
+
+            <quest id="12" name="find_Doll.xml" visible="false"/>
+
+            <quest id="13" name="talk_boy_hight.xml" visible="false"/>
+            <quest id="14" name="enter_room_3_h.xml" visible="false"/>
+            <quest id="15" name="talk_boy_beauty.xml" visible="false"/>
+            <quest id="16" name="talk_boy_twins.xml" visible="false"/>
+            <quest id="23" name="talk_boy_emi_no_rabbit.xml" visible="false"/>
+
+
+        </step>
+
+        <step num="6">
+
+            <quest id="17" name="talk_boy_emi_with_rabbit.xml" visible="false"/>
+            <quest id="24" name="talk_boy_emi_with_rabbit(0).xml" visible="false"/>
+            <quest id="18" name="toys.xml" visible="false"/>
+            <quest id="19" name="hide_in_wadrobe.xml" visible="false"/>
+            <quest id="21" name="talk_boy_gift.xml" visible="false"/>
+
+
+        </step>
+        <step num="7">
+            <quest id="22" name="find_kulon.xml" visible="true"/>
+            <quest id="39" name="talk_boy_age.xml" visible="true"/>
+            <quest id="25" name="find_strech.xml" visible="false"/>
+            <quest id="26" name="find_box.xml" visible="false"/>
+        </step>
+        <step num="8">
+            <quest id="27" name="talk_boy_gift_ready.xml" visible="true"/>
+            <quest id="28" name="enter_room_6.xml" visible="false"/>
+            <quest id="29" name="click_magni.xml" visible="false"/>
+            <quest id="30" name="find_casseta.xml" visible="false"/>
+            <quest id="31" name="search_magni.xml" visible="false"/>
+        </step>
+        <step num="9">
+            <quest id="32" name="enter_room_7.xml" visible="true"/>
+            <quest id="33" name="search_table.xml" visible="false"/>
+            <quest id="34" name="enter_room_6(2).xml" visible="false"/>
+        </step>
+        <step num="10">
+            <quest id="36" name="talk_boy_truth(1).xml" visible="false"/>
+            <quest id="35" name="talk_boy_truth.xml" visible="true"/>
+        </step>
+        <step num="11">
+            <quest id="37" name="enter_room_2(end).xml" visible="true"/>
+            <quest id="70" name="ready_be.xml" visible="false"/>
+        </step>
+        <step num="12">
+            <quest id="45" name="final.xml" visible="true"/>
+        </step>
+        <step num="13">
+            <quest id="40" name="end.xml" visible="false"/>
+            <quest id="41" name="bad.xml" visible="true"/>
+        </step>
+        <step num="14">
+        </step>
+    </steps>
+</level>

@@ -1,0 +1,28 @@
+<quest>
+    <onStart>
+        <turn-girl/>
+        <change-main-music file="songs/casseta.mp3"/>
+        <teleport-ghost ghost="2" room="6" x="14"/>
+        <start-dialog id="100" ghost="2"/>
+
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="100:14"/>
+        <trigger id="2" type="catch" />
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-quest-visibility quest_id="40" visibility="true"/>
+            <set-quest-visibility quest_id="41" visibility="false"/>
+        </listener>
+        <listener tid="2">
+            <set-quest-visibility quest_id="40" visibility="true"/>
+            <set-quest-visibility quest_id="41" visibility="false"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <try-increment-step />
+    </onEnd>
+</quest>

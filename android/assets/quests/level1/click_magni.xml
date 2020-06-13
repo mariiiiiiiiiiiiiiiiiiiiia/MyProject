@@ -1,0 +1,19 @@
+<quest>
+    <onStart>
+        <set-special-description room_subject_type="ROOM_SUBJECT"  sid="605" room="6" text="А что, если включить музыку? Наверняка это её отвлечет. Только найти бы кассету..."/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="click" room_subject_type="SUBJECT" sid="605"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+
+            <set-quest-visibility quest_id="30" visibility="true"/>
+            <start-quest name="find_casseta.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

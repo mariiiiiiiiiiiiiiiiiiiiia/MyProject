@@ -1,0 +1,27 @@
+<quest>
+    <onStart>
+        <change-dialog ghost="1" new_dialog="22"/>
+        <start-monolog id="4"/>
+        <sub-remove id="8"/>
+        <sub-remove id="7"/>
+        <sub-remove id="6"/>
+        <sub-add id="9"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="22:1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <open-door id="door7"/>
+            <open-door id="door11"/>
+            <sub-add id="11"/>
+            <set-quest-visibility quest_id="28" visibility="true"/>
+            <start-quest name="enter_room_6.xml"/>
+
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

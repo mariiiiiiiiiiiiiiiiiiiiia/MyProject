@@ -1,0 +1,22 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="comeIn" room="3"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <sub-remove id="4"/>
+            <sub-remove id="5"/>
+            <start-monolog id="2"/>
+            <set-quest-visibility quest_id="12" visibility="true"/>
+            <start-quest name="find_Doll.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+
+    </onEnd>
+</quest>

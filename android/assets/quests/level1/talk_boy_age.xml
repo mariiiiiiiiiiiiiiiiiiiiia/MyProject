@@ -1,0 +1,18 @@
+<quest>
+<onStart>
+</onStart>
+    <triggers>
+    <trigger id="1" type="talk" dialog="20:3"/>
+    </triggers>
+    <trigger-listeners>
+    <listener tid="1">
+        <set-quest-visibility quest_id="36" visibility="true"/>
+        <set-quest-visibility quest_id="35" visibility="false"/>
+    </listener>
+    </trigger-listeners>
+<onEnd>
+</onEnd>
+</quest>
+
+
+

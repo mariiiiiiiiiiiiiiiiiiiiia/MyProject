@@ -1,0 +1,20 @@
+<quest>
+    <onStart>
+        <set-search-description  rsid="102" room="1" text="NULL"/>
+        <set-visible type="subject" id="8" value="true"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="find" sid="8"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-quest-visibility quest_id="39" visibility="false"/>
+            <try-increment-step />
+            <set-quest-visibility quest_id="39" visibility="true"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

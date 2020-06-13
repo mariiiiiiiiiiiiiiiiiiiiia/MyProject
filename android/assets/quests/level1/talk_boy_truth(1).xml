@@ -1,0 +1,24 @@
+<quest>
+    <onStart>
+        <change-dialog ghost="1" new_dialog="26"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="26:2"/>
+        <trigger id="2" type="talk" dialog="26:3"/>
+        <trigger id="3" type="talk" dialog="26:4"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+        </listener>
+        <listener tid="2">
+        </listener>
+        <listener tid="3">
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <change-dialog ghost="1" new_dialog="27"/>
+        <try-increment-step />
+    </onEnd>
+</quest>

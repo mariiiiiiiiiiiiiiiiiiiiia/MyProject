@@ -1,0 +1,19 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="comeIn" room="1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <start-dialog id="4" ghost="1"/>
+            <try-increment-step />
+        </listener>
+
+    </trigger-listeners>
+
+    <onEnd>
+    </onEnd>
+</quest>

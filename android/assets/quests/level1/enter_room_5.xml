@@ -1,0 +1,23 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="comeIn" room="5"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <close-door id="door1"/>
+            <sub-remove id="1"/>
+            <set-special-description room_subject_type="DOOR" sid="door1" text="Заело!"/>
+            <change-dialog ghost="1" new_dialog="2"/>
+            <set-quest-visibility quest_id="20" visibility="true"/>
+            <start-quest name="to_be_cached.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+
+    </onEnd>
+</quest>

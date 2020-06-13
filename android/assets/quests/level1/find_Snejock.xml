@@ -1,0 +1,25 @@
+<quest>
+    <onStart>
+        <set-visible type="subject" id="2" value="true"/>
+        <set-search-description  rsid="402" room="4" text="А вот и Снежок!"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="find" sid="2"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-search-description  rsid="402" room="4" text="NULL"/>
+            <set-quest-visibility quest_id="24" visibility="true"/>
+            <set-quest-visibility quest_id="17" visibility="false"/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <set-quest-visibility quest_id="17" visibility="false"/>
+        <set-quest-visibility quest_id="23" visibility="false"/>
+        <set-quest-visibility quest_id="24" visibility="true"/>
+        <try-increment-step />
+    </onEnd>
+</quest>

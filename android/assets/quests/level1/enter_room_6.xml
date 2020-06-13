@@ -1,0 +1,25 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="comeIn" room="6"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <start-monolog id="5"/>
+            <turn-trigger enabled="true" tid="103"/>
+            <turn-trigger enabled="true" tid="104"/>
+            <turn-trigger enabled="true" tid="105"/>
+            <turn-trigger enabled="true" tid="106"/>
+            <pause-main-music/>
+            <change-another-sound file="songs/iva_sing.mp3"/>
+            <set-quest-visibility quest_id="29" visibility="true"/>
+            <start-quest name="click_magni.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

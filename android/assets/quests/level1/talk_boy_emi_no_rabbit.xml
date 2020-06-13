@@ -1,0 +1,19 @@
+<quest>
+    <onStart>
+        <change-dialog ghost="1" new_dialog="14"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="14:1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <change-dialog ghost="1" new_dialog="15"/>
+
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

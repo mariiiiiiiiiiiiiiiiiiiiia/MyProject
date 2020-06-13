@@ -1,0 +1,19 @@
+<quest>
+    <onStart>
+        <close-door id="door14"/>
+        <set-special-description room_subject_type="DOOR" sid="door14" text="Поздравляю! Вы прошли демо-версию игры!"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="click" room_subject_type="DOOR" sid="door14" />
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

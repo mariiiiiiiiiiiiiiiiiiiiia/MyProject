@@ -1,0 +1,817 @@
+<quest>
+    <tasks>
+        <task id="1" type="find" subject="1" visible="false"/>
+        <task id="2" type="find" subject="2" visible="false"/>
+        <task id="3" type="move" room="5" visible="false"/>
+        <task id="4" type="talk" ghost="1" visible="true"/>
+    </tasks>
+
+    <dialogs>
+        <dialog id="1" ghost_id="1" play="room:1" step="1">
+            <group id="1" options="false">
+                <text who = "ghost">А ты еще кто?</text>
+                <text who = "hero">Я... Меня зовут Леля. Я заблудилась, а на улице так темно и холодно, поэтому... </text>
+                <text who = "ghost">Меня это ни капельки не волнует!</text>
+                <text who = "hero">Но...</text>
+                <text who = "ghost"> Ты не видела Иву? Она все время прячется от меня!</text>
+                <text who = "ghost">Я искал по всему дому, даже спускался в подвал, но так и не нашел ее...</text>
+                <text who = "hero">Ива? Ах, знаю, знаю! </text>
+                <text who = "ghost">Правда?  </text>
+                <text who = "hero">Ивы любят влажность. Может быть, теперь она решила расти в ванной комнате?  </text>
+                <text who = "ghost">*огорченно вздыхает*  </text>
+                <text who = "ghost">Ива не дерево, она моя сестра, живой человек! </text>
+                <text who = "hero">Живой? Странно ... Я думала, здесь будут только призраки.</text>
+                <text who = "hero">Этот дом показался мне абсолютно заброшенным! </text>
+                <text who = "ghost">Это все твое воображение. Я живу в нем с рождения, так что заметил бы что-то неладное. </text>
+                <text who = "hero">А вот я уверена, что ты просто невнимательно искал!  </text>
+                <text who = "ghost">Вот же маленькая зануда! Ну, хорошо.   </text>
+                <text who = "ghost">Я разрешу тебе остаться в моем доме и дальше задавать свои глупые вопросы, только если ты поможешь найти Иву. </text>
+                <text who = "hero">Х-хорошо, большое спасибо! </text>
+                <text who = "ghost">Если увидишь ее - дай мне знать. </text>
+            </group>
+        </dialog>
+
+
+        <dialog id="2" ghost_id="1" step="2:6">
+            <group id="1" options="true">
+                <text who = "ghost">Ну чего тебе? </text>
+
+                <options>
+                    <option group="2" step="2:6">А как выглядит эта Ива?</option>
+                    <option group="3" step="2:6">Где мне ее искать?</option>
+                    <option group="4" step="4:6">Дверь в другую часть дома заперта!</option>
+                </options>
+            </group>
+
+            <group id="2" options="false">
+                <text who = "ghost">У нее очень мягкие руки.</text>
+                <text who = "ghost">А волосы ... словно шелк!</text>
+            </group>
+
+            <group id="3" options="false">
+                <text who = "ghost">В этом доме!</text>
+            </group>
+
+            <group id="4" options="false">
+                <text who = "ghost">К каждому замку есть ключ, только нужно внимательно его поискать.</text>
+                <text who = "ghost">Осмотри-ка комнаты, наверняка он где-нибудь завалялся.</text>
+                <text who = "hero"> Хорошо! </text>
+            </group>
+        </dialog>
+
+
+        <dialog id="3" ghost_id="2" >
+            <group id="1" options="false">
+                <text who="ghost">А? Что ты забыла в моем доме?!</text>
+                <text who="ghost"> Ну-ка живо убирайся отсюда, пока я сама тебя не вышвырнула!</text>
+            </group>
+        </dialog>
+
+
+        <dialog id="4" ghost_id="1">
+            <group id="1" options="false">
+                <text who="ghost">Ну и чего так долго?</text>
+                <text who="hero"> Я видела девушку. Она очень похожа на тебя! </text>
+                <text who="ghost">Тебе удалось найти Иву?  Надо было  привести её ко мне, бестолочь!</text>
+                <text who="hero"> Н-но твоя сестра выгнала меня, прежде чем я успела опомниться! Похоже, она чем-то  крайне недовольна... </text>
+                <text who="ghost">  Хм, точно! Ива не любит незваных гостей. Быть может, тебе стоит расположить  её к себе? </text>
+                <text who="hero"> Расположить к себе?  </text>
+                <text who="ghost"> Ну, да.  Например, найти и принести её любимые игрушки, Снежка и Эмили, в ее комнату. </text>
+                <text who="hero"> Звучит просто! Я все сделаю ... Ээм ...</text>
+                <text who = "ghost">Олеандр. Меня зовут Олеандр.</text>
+            </group>
+        </dialog>
+
+
+        <dialog id="5" ghost_id="1" step="9">
+            <group id="1" options="true">
+                <text who = "ghost">Ты уже нашла нужные игрушки? </text>
+                <options>
+                    <option group="3" step="9">Пока нет, но я очень стараюсь!  </option>
+                    <option group="2" step="9">А как они выглядят?</option>
+                </options>
+            </group>
+            <group id="2" options="false">
+                <text who = "ghost">Снежок -  пушистый кролик. Ива часто играет с ним.</text>
+                <text who = "ghost">У куклы Эмили  большие глаза... И очень красивое платье!</text>
+            </group>
+            <group id="3" options="false">
+                <text who = "ghost"> Будь внимательна. Они прячутся где-то в этой части дома.</text>
+            </group>
+        </dialog>
+
+        <dialog id="6" ghost_id="2">
+            <group id="1" options="false">
+                <text who="ghost">Эй! А ты что тут делаешь? Ну-ка иди сюда...</text>
+            </group>
+        </dialog>
+        <dialog id="7" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost"> Ты уже нашла нужные игрушки?</text>
+                <text who="hero">Не совсем. Там так много кукол, что глаза разбегаются!</text>
+                <text who="hero">Найти среди них ту самую Эмили довольно проблематично...</text>
+                <text who="ghost"> А от меня ты  что хочешь?  Я, между прочим, мальчик и в куклы не играю! Хотя...</text>
+                <text who="ghost"> Если ты покажешь мне Эмили, то я точно узнаю ее.</text>
+                <text who="hero">Неужели мне принести тебе всех кукол?  В мою сумочку не поместится больше одной.</text>
+                <text who="ghost">Хм, ну, единственное, что я помню, -  Эмили  боится высоты.</text>
+                <text who="hero">Разве куклы могут бояться высоты?</text>
+                <text who="ghost"> Пф, еще как!</text>
+                <text who="ghost">Если столкнешься с трудностями, так и быть, приходи ко мне.  Я помогу. Наверное...</text>
+                <text who="hero">Так точно!</text>
+            </group>
+        </dialog>
+
+        <dialog id="8" ghost_id="1" >
+        <group id="1" options="false">
+            <text who="ghost">Ты нашла Эмили?</text>
+            <text who="hero">Еще работаю над этим...</text>
+        </group>
+        </dialog>
+
+        <dialog id="9" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Похоже, это она.</text>
+                <text who="ghost">Хм... она чем-то мне напоминает любимую куклу сестры, но... мне кажется, ты ошиблась.  Неси следующую.</text>
+                <text who="ghost">Только не забудь положить эту куклу на место! Ты же не хочешь рассердить Иву еще больше?</text>
+                <text who="hero">Хорошо.</text>
+         </group>
+        </dialog>
+        <dialog id="19" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Похоже, это она.</text>
+                <text who="ghost">Хм... она чем-то мне напоминает любимую куклу сестры, но... мне кажется, ты ошиблась.  Неси следующую.</text>
+                <text who="ghost">Только не забудь положить эту куклу на место! Ты же не хочешь рассердить Иву еще больше?</text>
+                <text who="hero">Хорошо.</text>
+            </group>
+        </dialog>
+        <dialog id="29" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">К кукле прикреплена какая-то железяка, которая держит ее. Как мне ее отсоединить?</text>
+                <text who="ghost">Это точно не Эмили!  Штатив покупали другой кукле.</text>
+                <text who="hero">Ты уверен? Может, Ива решила одолжить его?</text>
+                <text who="ghost"> Какая ты глупая!  Ива бы ни за что на свете не заставила Эмили  так долго стоять на одном месте!</text>
+                <text who="ghost">Иначе как бы она потом с ней играла? Знаешь, куклы тоже устают.</text>
+                <text who="hero">Ммм, звучит не убедительно, но раз ты в этом уверен... Придется подумать еще.</text>
+            </group>
+        </dialog>
+        <dialog id="39" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Она  находится слишком высоко, я не могу до нее достать!</text>
+                <text who="ghost">Ты вообще слушала меня, маленькая бестолочь? Эмили боится высоты!</text>
+                <text who="hero">Но я была уверена...</text>
+                <text who="ghost">Моя сестра никогда бы не стала пугать свою любимую куклу!</text>
+                <text who="hero">Ох, ладно. Тогда мне необходимо подумать ещё.</text>
+            </group>
+        </dialog>
+
+        <dialog id="10" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты нашла Эмили?</text>
+                <text who="hero">Похоже, это она.</text>
+                <text who="ghost">Хм... Я точно узнаю ее!</text>
+                <text who="ghost">Кстати, Снежка я нашел сам.</text>
+                <text who="ghost">Оказывается, он лежал у меня в корзине! </text>
+                <text who="ghost">  Теперь, когда у тебя есть все игрушки, ты можешь оставить их в комнате Ивы.</text>
+                <text who="ghost"> Просто усади их на диван, и не забудь спрятаться в шкафу!</text>
+                <text who="hero">Это еще зачем?</text>
+                <text who="ghost">Ох, какая же ты недогадливая! Конечно, чтобы увидеть её реакцию!</text>
+                <text who="ghost">Иначе как мы поймем, что наш план сработал?</text>
+                <text who="hero">Действительно...</text>
+             </group>
+        </dialog>
+
+        <dialog id="11" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Поторопись!</text>
+            </group>
+        </dialog>
+
+        <dialog id="12" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Как обстоят дела с Ивой?</text>
+                <text who="hero">Все намного хуже , чем мы ожидали! Она выглядела подавленной...</text>
+                <text who="ghost">Как ты умудрились расстроить мою сестру, недотепа?! </text>
+                <text who="hero">Мне кажется, это ты ее огорчил, а не я.</text>
+                <text who="ghost">Ха? О чем ты говоришь?</text>
+                <text who="hero">Она упоминула твоё имя. Между вами что-то произошло?</text>
+                <text who="ghost">Нет, мы всегда ладили с ней! Быть такого...</text>
+                <text who="ghost">Хотя подожди... Как я мог забыть!</text>
+                <text who="ghost">Я точно помню, как мы недавно украшали наш дом к какому-то празднику. Скорее всего, у Ивы был день рождения...</text>
+                <text who="ghost">Какой брат забудет о таком! Теперь понятно, почему Ива не хочет видеть меня!</text>
+                <text who="ghost">Нужно как можно скорее все исправить.</text>
+                <text who="hero">И как ты собираешься это сделать?</text>
+                <text who="ghost">Извиниться и вручить ей подарок, конечно же! Я точно помню, что купил его, только вот не знаю, куда положил...</text>
+                <text who="ghost">Ты должна помочь мне все исправить! Найди подарок и принеси его мне.</text>
+                <text who="hero">Так точно, капитан Олеандр!</text>
+            </group>
+        </dialog>
+
+        <dialog id="13" ghost_id="1" >
+            <group id="1" options="true">
+                <text who="ghost">Ну чего?</text>
+                <options>
+
+                    <option group="2"  step="16:20"> А что ты собираешься подарить Иве?</option>
+                    <option group="3" step="16:20" > Сколько исполняется твоей сестре?</option>
+                    <option group="4"  step="17:18"> Нет ли у тебя коробки?</option>
+                </options>
+            </group>
+            <group id="2" options="false">
+                <text who="ghost">Ммм... вспомнил, парные кулоны!!</text>
+            </group>
+            <group id="3" options="false">
+                <text who="ghost"> Двенадцать лет.!</text>
+                <text who="hero">Странно, она выглядит намного старше...!</text>
+            </group>
+            <group id="4" options="false">
+                <text who="ghost"> Хм...Да, она лежит в книжном шкафу. Можешь её взять.</text>
+                <text who="ghost"> Она спряталась где-то за книгами, так что не прозевай!</text>
+            </group>
+        </dialog>
+
+        <dialog id="14" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Ты принесла подарок?</text>
+                <text who="hero">И даже красиво его упаковала!</text>
+                <text who="ghost">Тогда вновь повторяем наш план. </text>
+                <text who="ghost">Положи подарок на её стол и спрячься в шкафу.</text>
+                <text who="hero">Ох...Ладно. Надеюсь, она уже ушла оттуда.</text>
+                <text who="ghost">Точно! Совсем забыл. Держи - это ключ от подвала.</text>
+                <text who="ghost">Возможно, он пригодится тебе.</text>
+            </group>
+        </dialog>
+        <dialog id="15" ghost_id="1" >
+            <group id="1" options="false">
+                <text who="ghost">Не подведи меня!</text>
+            </group>
+        </dialog>
+
+
+        <dialog id="90" ghost_id="2">
+            <group id="1" options="false">
+                <text who = "ghost">Э-Эмили? Снежок? Как вы здесь оказались, я точно помню...</text>
+                <text who = "ghost">Подождите-ка... </text>
+                <text who = "ghost">...</text>
+                <text who = "ghost">Ох, Олеандр...</text>
+            </group>
+        </dialog>
+
+        <dialog id="900" ghost_id="2">
+            <group id="1" options="false">
+                <text who = "ghost">Что ты делаешь в моей комнате?!</text>
+                <text who = "hero">Я-я...</text>
+                <text who = "ghost">Ты ещё и трогала мои игрушки? Ну, держись!</text>
+                <text who = "hero">Это не я, а Олеандр!</text>
+                <text who = "ghost">Олеандр...</text>
+                <text who = "ghost">Да как ты вообще посмела даже заговорить с ним!</text>
+            </group>
+        </dialog>
+
+
+
+    </dialogs>
+
+    <monologs>
+        <monolog id="1">
+            <text>Как хорошо, что я наткнулась на этот дом.</text>
+            <text>Эй! Здесь есть кто-нибудь?></text>
+            <text>...</text>
+            <text>Кажется, здесь могут быть только призраки.></text>
+            <text>По крайней мере, мне есть, где переждать ночь.></text>
+        </monolog>
+
+        <monolog id="2">
+            <text> Я положила куклу на место. Стоит попробовать ещё раз.</text>
+        </monolog>
+
+        <monolog id="3">
+            <text>Больше не стоит трогать кукол, сидящих слишком высоко.</text>
+        </monolog>
+
+        <monolog id="4">
+        <text>Кажется, это и есть комната Ивы.</text>
+        <text>Какая же она красивая!</text>
+        </monolog>
+
+        <monolog id="5">
+            <text>Не думала, что в этом доме может быть так жутко...</text>
+        </monolog>
+
+        <monolog id="6">
+            <text>Мне здесь не нравится!</text>
+        </monolog>
+
+        <monolog id="7">
+            <text>Выражения лица Ивы стало печальным, когда я упомянула её брата. </text>
+            <text>Мне нужно рассказать обо всем Олеандру.</text>
+
+        </monolog>
+        <monolog id="8">
+            <text> Не думаю, что стоит дарить подарок в таком виде.</text>
+            <text>Быть может, стоит его упаковать?</text>
+            <text>У Олеандра наверняка есть коробка.</text>
+        </monolog>
+        <monolog id="9">
+            <text>Какая странная песня...</text>
+            <text>Она доносится из комнаты Ивы.</text>
+            <text>Но теперь я знаю, что сестра Олендра снова в ней.</text>
+            <text>Вот бы выманить её оттуда!</text>
+        </monolog>
+        <monolog id="100">
+            <text>Поздравляю тебя, дорогой пользователь!</text>
+            <text>Ты прошел демо-версию игры.</text>
+            <text>Но в будущем игра будет дорабатываться!</text>
+
+        </monolog>
+
+
+    </monologs>
+
+    <triggers>
+        <!--<trigger id="100" type="comeIn" room="3" ifStep="-1"/>-->
+        <trigger id="101" type="catch" ifStep="-1"/>
+        <trigger id="102" type="comeIn" room="4" ifStep="-1"/>
+
+        <trigger id="204" type="comeIn" room="5" ifStep="-1"/>
+        <trigger id="205" type="comeIn" room="13" ifStep="-1"/>
+        <trigger id="206" type="comeIn" room="7" ifStep="-1"/>
+
+        <trigger id="104" type="find" sid="4" ifStep="-1"/>
+        <trigger id="114" type="find" sid="5" ifStep="-1"/>
+        <trigger id="124" type="search" sid="117" ifStep="-1"/>
+        <trigger id="134" type="search" sid="1110" ifStep="-1"/>
+        <trigger id="144" type="search" sid="115" ifStep="-1"/>
+
+        <!--<trigger id="105" type="talk"Леля ifStep="-1"/>-->
+        <trigger id="115" type="talk" dialog="19:1" ifStep="-1"/>
+        <trigger id="125" type="talk" dialog="29:1" ifStep="-1"/>
+        <trigger id="135" type="talk" dialog="39:1" ifStep="-1"/>
+
+        <trigger id="106" type="comeIn" room="3" ifStep="-1"/>
+        <trigger id="116" type="comeIn" room="3" ifStep="-1"/>
+        <trigger id="136" type="comeIn" room="3" ifStep="-1"/>
+
+        <trigger id="200" type="comeIn" room="13" ifStep="-1"/>
+        <trigger id="201" type="comeIn" room="6" ifStep="-1"/>
+        <trigger id="202" type="comeIn" room="7" ifStep="-1"/>
+        <trigger id="203" type="comeIn" room="6" ifStep="-1"/>
+
+        <trigger id="0" type="comeIn" room="4" ifStep="0"/>
+        <trigger id="1" type="comeIn" room="1" ifStep="1"/>
+        <trigger id="2" type="talk" dialog="1:1" ifStep="2"/>
+        <trigger id="3" type="click" room_subject_type="DOOR" sid="door4" ifStep="3"/>
+        <trigger id="4" type="talk" dialog="2:4" ifStep="4"/>
+        <trigger id="5" type="find" sid="1" ifStep="5"/>
+        <trigger id="6" type="comeIn" room="5" ifStep="6"/>
+        <trigger id="7" type="catch" ifStep="7"/>
+        <trigger id="8" type="talk" dialog="4:1" ifStep="8"/>
+        <trigger id="9" ifStep="9" room_subject_type="SUBJECT" sid="112,113,114,115,117,119,1110" type="click" />
+        <trigger id="10" type="talk" dialog="7:1" ifStep="10"/>
+        <trigger id="11" type="find" sid="3" ifStep="11"/>
+        <trigger id="12" type="talk" dialog="10:1" ifStep="12"/>
+        <trigger id="13" type="search" sid="224" ifStep="13"/>
+        <trigger id="14" type="comeIn" room="2" ifStep="14"/>
+        <trigger id="15" type="talk" dialog="12:1" ifStep="15"/>
+        <trigger id="16" type="find" sid="6" ifStep="16"/>
+        <trigger id="17" type="talk" dialog="13:4" ifStep="17"/>
+        <trigger id="18" type="find" sid="7" ifStep="18"/>
+        <trigger id="19" type="find" sid="8" ifStep="19"/>
+        <trigger id="20" type="talk" dialog="14:1" ifStep="20"/>
+        <trigger id="21" type="comeIn" room="6" ifStep="21"/>
+        <trigger id="22" type="click" room_subject_type="SUBJECT" sid="50" ifStep="22"/>
+        <trigger id="23" type="find" sid="10" ifStep="23"/>
+        <trigger id="24" type="search" sid="50" ifStep="24"/>
+        <trigger id="25" type="comeIn" room="7" ifStep="25"/>
+
+    </triggers>
+
+    <trigger-listeners>
+        <!--<listener tid="100">-->
+            <!--<start-monolog id="1"/>-->
+            <!--<turn-trigger enabled="false" tid="100"/>-->
+        <!--</listener>-->
+
+        <listener tid="101">
+            <open-door id="door14"/>
+        </listener>
+        <listener tid="102">
+            <close-door id="door14"/>
+        </listener>
+
+        <listener tid="104">
+            <change-dialog ghost="1" new_dialog="9"/>
+            <set-room-subject-visibility room="3" rsid="112" visible="false"/>
+
+            <remove-type room="3" rsid="112" type="search"/>
+            <remove-type room="3" rsid="113" type="search"/>
+            <remove-type room="3" rsid="115" type="search"/>
+            <remove-type room="3" rsid="117" type="search"/>
+            <remove-type room="3" rsid="119" type="search"/>
+            <remove-type room="3" rsid="1110" type="search"/>
+
+        </listener>
+        <listener tid="114">
+            <change-dialog ghost="1" new_dialog="19"/>
+            <set-room-subject-visibility room="3" rsid="119" visible="false"/>
+
+            <remove-type room="3" rsid="112" type="search"/>
+            <remove-type room="3" rsid="113" type="search"/>
+            <remove-type room="3" rsid="115" type="search"/>
+            <remove-type room="3" rsid="117" type="search"/>
+            <remove-type room="3" rsid="119" type="search"/>
+            <remove-type room="3" rsid="1110" type="search"/>
+        </listener>
+        <listener tid="124">
+            <change-dialog ghost="1" new_dialog="29"/>
+            <remove-type room="3" rsid="112" type="search"/>
+            <remove-type room="3" rsid="113" type="search"/>
+            <remove-type room="3" rsid="115" type="search"/>
+            <remove-type room="3" rsid="117" type="search"/>
+            <remove-type room="3" rsid="119" type="search"/>
+            <remove-type room="3" rsid="1110" type="search"/>
+
+        </listener>
+        <listener tid="134">
+            <change-dialog ghost="1" new_dialog="39"/>
+            <remove-type room="3" rsid="112" type="search"/>
+            <remove-type room="3" rsid="113" type="search"/>
+            <remove-type room="3" rsid="115" type="search"/>
+            <remove-type room="3" rsid="117" type="search"/>
+            <remove-type room="3" rsid="119" type="search"/>
+            <remove-type room="3" rsid="1110" type="search"/>
+
+        </listener>
+        <listener tid="144">
+            <change-dialog ghost="1" new_dialog="39"/>
+            <remove-type room="3" rsid="112" type="search"/>
+            <remove-type room="3" rsid="113" type="search"/>
+            <remove-type room="3" rsid="115" type="search"/>
+            <remove-type room="3" rsid="117" type="search"/>
+            <remove-type room="3" rsid="119" type="search"/>
+            <remove-type room="3" rsid="1110" type="search"/>
+
+        </listener>
+
+        <listener tid="105">
+            <change-dialog ghost="1" new_dialog="8"/>
+            <turn-trigger enabled="true" tid="106"/>
+        </listener>
+        <listener tid="115">
+            <change-dialog ghost="1" new_dialog="8"/>
+            <turn-trigger enabled="true" tid="116"/>
+        </listener>
+        <listener tid="125">
+            <change-dialog ghost="1" new_dialog="8"/>
+            <add-type room="3" rsid="112" type="search"/>
+            <add-type room="3" rsid="113" type="search"/>
+            <add-type room="3" rsid="115" type="search"/>
+            <add-type room="3" rsid="117" type="search"/>
+            <add-type room="3" rsid="119" type="search"/>
+            <add-type room="3" rsid="1110" type="search"/>
+            <set-room-subject-visibility room="3" rsid="117" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="1117" visible="true"/>
+        </listener>
+        <listener tid="135">
+            <change-dialog ghost="1" new_dialog="8"/>
+            <add-type room="3" rsid="112" type="search"/>
+            <add-type room="3" rsid="113" type="search"/>
+            <add-type room="3" rsid="115" type="search"/>
+            <add-type room="3" rsid="117" type="search"/>
+            <add-type room="3" rsid="119" type="search"/>
+            <add-type room="3" rsid="1110" type="search"/>
+            <set-room-subject-visibility room="3" rsid="115" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="1110" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="1115" visible="true"/>
+            <set-room-subject-visibility room="3" rsid="11110" visible="true"/>
+            <turn-trigger enabled="true" tid="136"/>
+        </listener>
+
+        <listener tid="106">
+            <sub-remove id="4"/>
+            <set-room-subject-visibility room="3" rsid="1112" visible="true"/>
+            <start-monolog id="2"/>
+            <turn-trigger enabled="false" tid="106"/>
+            <add-type room="3" rsid="112" type="search"/>
+            <add-type room="3" rsid="113" type="search"/>
+            <add-type room="3" rsid="115" type="search"/>
+            <add-type room="3" rsid="117" type="search"/>
+            <add-type room="3" rsid="119" type="search"/>
+            <add-type room="3" rsid="1110" type="search"/>
+        </listener>
+        <listener tid="116">
+            <sub-remove id="5"/>
+            <set-room-subject-visibility room="3" rsid="1119" visible="true"/>
+            <start-monolog id="2"/>
+            <turn-trigger enabled="false" tid="116"/>
+            <add-type room="3" rsid="112" type="search"/>
+            <add-type room="3" rsid="113" type="search"/>
+            <add-type room="3" rsid="115" type="search"/>
+            <add-type room="3" rsid="117" type="search"/>
+            <add-type room="3" rsid="119" type="search"/>
+            <add-type room="3" rsid="1110" type="search"/>
+        </listener>
+        <listener tid="136">
+            <start-monolog id="3"/>
+            <turn-trigger enabled="false" tid="136"/>
+        </listener>
+
+        <listener tid="200">
+            <start-monolog id="4"/>
+            <turn-trigger enabled="false" tid="200"/>
+        </listener>
+
+        <listener tid="201">
+            <start-monolog id="5"/>
+            <turn-trigger enabled="false" tid="201"/>
+        </listener>
+
+        <listener tid="202">
+            <start-monolog id="6"/>
+            <turn-trigger enabled="false" tid="202"/>
+        </listener>
+
+        <listener tid="203">
+            <change-another-sound name="songs/iva_sing.mp3"/>
+            <pause-main-music/>
+            <turn-trigger enabled="true" tid="204"/>
+        </listener>
+
+        <listener tid="204">
+            <resume-main-music name="songs/song2.mp3"/>
+            <stop-another-sound/>
+            <turn-trigger enabled="true" tid="203"/>
+        </listener>
+        <listener tid="205">
+            <resume-main-music name="songs/song2.mp3"/>
+            <stop-another-sound/>
+            <turn-trigger enabled="false" tid="203"/>
+        </listener>
+        <listener tid="206">
+            <resume-main-music name="songs/song2.mp3"/>
+            <turn-trigger enabled="true" tid="203"/>
+            <stop-another-sound/>
+        </listener>
+
+    </trigger-listeners>
+
+    <step-listener>
+        <step number="0">
+        </step>
+
+        <step number="1">
+            <start-monolog id="1"/>
+
+            <set-room-subject-visibility room="3" rsid="1112" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="1119" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="1117" visible="false"/>
+
+            <remove-type room="3" rsid="112" type="search"/>
+            <remove-type room="3" rsid="113" type="search"/>
+            <remove-type room="3" rsid="115" type="search"/>
+            <remove-type room="3" rsid="117" type="search"/>
+            <remove-type room="3" rsid="119" type="search"/>
+            <remove-type room="3" rsid="1110" type="search"/>
+            <remove-type room="6" rsid="50" type="search"/>
+
+            <turn-trigger enabled="false" tid="136"/>
+            <turn-trigger enabled="false" tid="106"/>
+            <turn-trigger enabled="false" tid="116"/>
+            <turn-trigger enabled="false" tid="200"/>
+            <turn-trigger enabled="false" tid="201"/>
+            <turn-trigger enabled="false" tid="202"/>
+            <turn-trigger enabled="false" tid="203"/>
+            <turn-trigger enabled="false" tid="204"/>
+            <turn-trigger enabled="false" tid="205"/>
+            <turn-trigger enabled="false" tid="206"/>
+
+
+
+            <change-dialog ghost="2" new_dialog="3"/>
+            <set-special-description room_subject_type="DOOR" sid="door14" text="Я не хочу на улицу. Там так холодно!"/>
+        </step>
+
+        <step number="2">
+            <start-dialog id="1" ghost="1"/>
+            <set-special-description room_subject_type="DOOR" sid="door4" text="Заперто! Быть может, тот мальчик знает, как её открыть?"/>
+        </step>
+
+        <step number="3">
+            <change-dialog ghost="1" new_dialog="2"/>
+        </step>
+
+        <step number="4">
+        </step>
+
+        <step number="5">
+            <set-visible type="subject" id="1" value="true"/>
+        </step>
+
+        <step number="6">
+            <open-door id="door4"/>
+        </step>
+
+        <step number="7">
+            <remove-type room="2" rsid="2005" type="search"/>
+            <sub-remove id="1"/>
+            <close-door id="door1"/>
+            <set-special-description room_subject_type="DOOR" sid="door1" text="Заело!"/>
+        </step>
+
+        <step number="8">
+            <open-door id="door1"/>
+            <close-door id="door4"/>
+
+            <change-dialog ghost="2" new_dialog="6"/>
+            <change-dialog ghost="1" new_dialog="4"/>
+
+            <set-special-description room_subject_type="DOOR" sid="door4" text="Я не хочу, чтобы Ива вновь прогнала меня на мороз!"/>
+        </step>
+
+        <step number="9">
+            <change-dialog ghost="1" new_dialog="5"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="302" room="2" text="Так у Эмили темные волосы... Только бы не забыть."/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="303" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="305" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="307" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="309" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="310" room="3" text="Этих кукол так много...Так какая же из них Эмили?"/>
+        </step>
+
+        <step number="10">
+            <change-dialog ghost="1" new_dialog="7"/>
+            <set-visible type="subject" id="4" value="true"/>
+            <set-visible type="subject" id="5" value="true"/>
+            <set-visible type="subject" id="3" value="true"/>
+        </step>
+        <step number="11">
+            <change-dialog ghost="1" new_dialog="8"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="112" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="113" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="115" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="117" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="119" room="3" text="NULL"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="1110" room="3" text="NULL"/>
+
+           <add-type room="3" rsid="112" type="search"/>
+            <add-type room="3" rsid="113" type="search"/>
+            <add-type room="3" rsid="115" type="search"/>
+            <add-type room="3" rsid="117" type="search"/>
+            <add-type room="3" rsid="119" type="search"/>
+            <add-type room="3" rsid="1110" type="search"/>
+
+            <set-search-description  rsid="112" room="3" text="Теперь нужно отнести эту куклу Олеандру"/>
+            <set-search-description  rsid="113" room="3" text="Теперь нужно отнести эту куклу Олеандру"/>
+            <set-search-description  rsid="119" room="3" text="Теперь нужно отнести эту куклу Олеандру"/>
+            <set-search-description  rsid="117" room="3" text="Она прикреплена к железакe! Может быть, Олеандр поможет мне?"/>
+            <set-search-description  rsid="115" room="3" text="Не могу достать! Нужно попросить Олеадра это сделать."/>
+            <set-search-description  rsid="1110" room="3" text="Не могу достать! Нужно попросить Олеадра это сделать."/>
+
+        </step>
+        <step number="12">
+            <set-room-subject-visibility room="3" rsid="113" visible="false"/>
+            <remove-type room="3" rsid="112" type="search"/>
+            <remove-type room="3" rsid="113" type="search"/>
+            <remove-type room="3" rsid="115" type="search"/>
+            <remove-type room="3" rsid="117" type="search"/>
+            <remove-type room="3" rsid="119" type="search"/>
+            <remove-type room="3" rsid="1110" type="search"/>
+            <change-dialog ghost="1" new_dialog="10"/>
+
+        </step>
+        <step number="13">
+            <add-type rsid="224" room="13" type="search"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="2004" room="2" text="NULL"/>
+            <set-room-subject-visibility room="3" rsid="1119" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="119" visible="true"/>
+            <set-room-subject-visibility room="3" rsid="1112" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="112" visible="true"/>
+            <set-room-subject-visibility room="3" rsid="1115" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="115" visible="true"/>
+            <set-room-subject-visibility room="3" rsid="117" visible="true"/>
+            <set-room-subject-visibility room="3" rsid="1117" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="11110" visible="false"/>
+            <set-room-subject-visibility room="3" rsid="1110" visible="true"/>
+            <change-dialog ghost="1" new_dialog="11"/>
+
+            <open-door id="door4"/>
+            <close-door id="door7"/>
+            <close-door id="door11"/>
+            <teleport-ghost ghost="2" room="9" x="7"/>
+            <change-start-point ghost="2" room="9" x="7"/>
+
+            <turn-trigger enabled="true" tid="200"/>
+            <turn-trigger enabled="true" tid="201"/>
+            <turn-trigger enabled="true" tid="202"/>
+
+            <sub-add id="2"/>
+            <set-search-description  rsid="224" room="13" text="Я положила игрушки на диван. Нужно срочно спрятаться!"/>
+        </step>
+
+
+
+        <step number="14">
+            <teleport-ghost ghost="2" room="13" x="1"/>
+            <start-dialog ghost="2" id="900"/>
+            <change-background-roomsub name="SR13/SofaToys" room="13" rsid="224"/>
+            <turn-trigger enabled="false" tid="200"/>
+            <turn-trigger enabled="false" tid="201"/>
+            <turn-trigger enabled="false" tid="202"/>
+        </step>
+
+        <step number="15">
+            <sub-remove id="3"/>
+            <sub-remove id="2"/>
+            <change-dialog ghost="1" new_dialog="12"/>
+            <start-monolog id="7"/>
+            <start-cut-scene sceneId="1"/>
+        </step>
+
+        <step number="16">
+            <change-dialog ghost="1" new_dialog="13"/>
+            <set-visible type="subject" id="6" value="true"/>
+            <teleport-ghost room="13" ghost="2" x="8"/>
+            <change-start-point ghost="2" room="13" x="8"/>
+            <set-search-description  rsid="2" room="1" text= "А вот и кулоны..."/>
+        </step>
+
+        <step number="17">
+            <remove-type room="1" rsid="2" type="search"/>
+            <start-monolog id="8"/>
+        </step>
+
+        <step number="18">
+            <close-door id="door1"/>
+            <set-visible type="subject" id="7" value="true"/>
+            <set-special-description room_subject_type="DOOR" sid="door1" text="Мне нужно сперва взять коробку, а то потом забуду!"/>
+            <set-search-description  rsid="1001" room="1" text="Осталось найти то, чем можно завязать на коробке бант."/>
+            <set-visible type="subject" id="8" value="true"/>
+        </step>
+        <step number="19">
+            <open-door id="door1"/>
+            <remove-type room="1" rsid="1001" type="search"/>
+            <set-special-description room_subject_type="DOOR" sid="door1" text="NULL"/>
+            <set-search-description  rsid="5" room="5" text="А вот и лента. Красивый подарок для Ивы готов!"/>
+        </step>
+
+        <step number="20">
+            <sub-remove id="8"/>
+            <sub-remove id="7"/>
+            <sub-remove id="6"/>
+            <sub-add id="9"/>
+            <change-dialog ghost="1" new_dialog="14"/>
+            <open-door id="door7"/>
+            <open-door id="door11"/>
+            <!--добавить ключ в инвентарь-->
+        </step>
+        <step number="21">
+            <sub-add id="11"/>
+            <change-dialog ghost="1" new_dialog="15"/>
+            <turn-trigger enabled="true" tid="203"/>
+            <turn-trigger enabled="true" tid="204"/>
+            <turn-trigger enabled="true" tid="205"/>
+            <turn-trigger enabled="true" tid="206"/>
+        </step>
+
+        <step number="22">
+            <start-monolog id="9"/>
+            <set-special-description room_subject_type="ROOM_SUBJECT"  sid="50" room="6" text="А что, если включить музыку? Наверняка это её отвлечет. Только найти бы кассету..."/>
+        </step>
+
+        <step number="23">
+            <set-visible type="subject" id="10" value="true"/>
+        </step>
+
+        <step number="24">
+            <add-type room="6" rsid="50" type="search"/>
+            <set-search-description  rsid="50" room="6" text="Отлично, теперь нужно как-то попасть в её комнату."/>
+
+        </step>
+
+        <step number="25">
+            <turn-trigger enabled="false" tid="203"/>
+            <turn-trigger enabled="false" tid="204"/>
+            <turn-trigger enabled="false" tid="205"/>
+            <turn-trigger enabled="false" tid="206"/>
+            <change-main-music name="songs/casseta.mp3"/>
+            <sub-remove id="10"/>
+            <stop-another-sound/>
+        </step>
+
+        <step number="26">
+            <start-monolog id="100"/>
+            <close-door id="door6"/>
+            <set-special-description room_subject_type="DOOR" sid="door6" text="Она сейчас в той комнате! Нужно торопиться!"/>
+            <close-door id="door13"/>
+            <set-special-description room_subject_type="DOOR" sid="door13" text="Она сейчас в той комнате! Нужно торопиться!"/>
+            <teleport-ghost ghost="2" room="6" x="7"/>
+            <change-start-point ghost="2" room="6" x="7"/>
+        </step>
+
+
+
+    </step-listener>
+</quest>

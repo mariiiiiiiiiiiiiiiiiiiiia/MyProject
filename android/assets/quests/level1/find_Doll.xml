@@ -1,0 +1,82 @@
+<quest>
+    <onStart>
+        <set-visible type="subject" id="3" value="true"/>
+
+        <add-type room="3" rsid="302" type="search"/>
+        <add-type room="3" rsid="303" type="search"/>
+        <add-type room="3" rsid="305" type="search"/>
+        <add-type room="3" rsid="307" type="search"/>
+        <add-type room="3" rsid="309" type="search"/>
+        <add-type room="3" rsid="310" type="search"/>
+        <change-dialog ghost="1" new_dialog="8"/>
+        <set-room-subject-visibility room="3" rsid="309" visible="true"/>
+        <set-room-subject-visibility room="3" rsid="302" visible="true"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="search" sid="305" />
+        <trigger id="2" type="search" sid="310" />
+        <trigger id="3" type="search" sid="307" />
+        <trigger id="4" type="search" sid="302" />
+        <trigger id="5" type="search" sid="309" />
+        <trigger id="6" type="search" sid="303" />
+
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <change-dialog ghost="1" new_dialog="10"/>
+            <set-quest-visibility quest_id="13" visibility="true"/>
+            <start-quest name="talk_boy_hight.xml"/>
+        </listener>
+        <listener tid="2">
+            <change-dialog ghost="1" new_dialog="10"/>
+            <set-quest-visibility quest_id="13" visibility="true"/>
+            <start-quest name="talk_boy_hight.xml"/>
+        </listener>
+        <listener tid="3">
+            <change-dialog ghost="1" new_dialog="12"/>
+            <set-quest-visibility quest_id="15" visibility="true"/>
+            <start-quest name="talk_boy_beauty.xml"/>
+        </listener>
+        <listener tid="4">
+            <sub-add id="4"/>
+            <set-room-subject-visibility room="3" rsid="302" visible="false"/>
+            <change-dialog ghost="1" new_dialog="13"/>
+            <set-quest-visibility quest_id="16" visibility="true"/>
+            <start-quest name="talk_boy_twins.xml"/>
+        </listener>
+        <listener tid="5">
+            <sub-add id="2"/>
+            <set-room-subject-visibility room="3" rsid="309" visible="false"/>
+            <change-dialog ghost="1" new_dialog="13"/>
+            <set-quest-visibility quest_id="16" visibility="true"/>
+            <start-quest name="talk_boy_twins.xml"/>
+        </listener>
+        <listener tid="6">
+            <set-special-description room_subject_type="ROOM_SUBJECT" sid="204" room="2" text="NULL"/>
+            <set-quest-visibility quest_id="24" visibility="false"/>
+            <set-quest-visibility quest_id="17" visibility="true"/>
+            <set-room-subject-visibility room="3" rsid="303" visible="false"/>
+            <try-increment-step />
+            <set-quest-visibility quest_id="23" visibility="true"/>
+            <start-quest name="talk_boy_emi_no_rabbit.xml"/>
+            <start-quest  name="talk_boy_emi_with_rabbit.xml"/>
+            <remove-type room="3" rsid="302" type="search"/>
+            <remove-type room="3" rsid="303" type="search"/>
+            <remove-type room="3" rsid="305" type="search"/>
+            <remove-type room="3" rsid="307" type="search"/>
+            <remove-type room="3" rsid="309" type="search"/>
+            <remove-type room="3" rsid="310" type="search"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+        <remove-type room="3" rsid="302" type="search"/>
+        <remove-type room="3" rsid="303" type="search"/>
+        <remove-type room="3" rsid="305" type="search"/>
+        <remove-type room="3" rsid="307" type="search"/>
+        <remove-type room="3" rsid="309" type="search"/>
+        <remove-type room="3" rsid="310" type="search"/>
+    </onEnd>
+</quest>

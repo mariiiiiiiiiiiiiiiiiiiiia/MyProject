@@ -1,0 +1,77 @@
+<level>
+    <dialogs></dialogs>
+    <monologs></monologs>
+    <trigger-no-time></trigger-no-time>
+    <steps>
+        <step num="1">
+            <quest name="Зайди в комнату1" visible="true"/>
+            <quest name="Зайди в комнату2" visible="true"/>
+            <quest name="Зайди в комнату3" visible="false"/>
+            <quest name="Зайди в комнату4" visible="false"/>
+        </step>
+
+        <step num="2">
+            <quest name="Найти куклу" visible="true"/>
+            <quest name="Взяла Эмили" visible="false"/>
+            <quest name="Взяла с пола" visible="false"/>
+            <quest name="Взяла с потолка" visible="false"/>
+            <quest name="Взяла с штифта" visible="false"/>
+        </step>
+
+    </steps>
+
+    <quests>
+        <quest name="Зайди в комнату1">
+            <onStart>
+                <close-door id="door4"/>
+                <change-dialog ghost="1" id="1"/>
+            </onStart>
+            <triggers>
+                <trigger id="1" type="comeIn" room="1" ifStep="1"/>
+            </triggers>
+            <trigger-listener>
+
+            </trigger-listener>
+            <step-listener>
+                <step num="1">
+                    <start-quest name="Зайди в комнату3"/>
+                    <complete/>
+                </step>
+            </step-listener>
+            <onEnd>
+
+            </onEnd>
+        </quest>
+        <quest name="Найти куклу">
+            <onStart>
+                <add-type room="3" rsid="112,113,115,117,119,1110" type="search"/>
+            </onStart>
+            <triggers>
+                <trigger id="104" type="find" sid="4"/>
+                <trigger id="114" type="find" sid="5"/>
+                <trigger id="124" type="search" sid="5"/>
+            </triggers>
+            <trigger-listener>
+                <listener tid="104">
+                    <start-quest name="Взяла Эмили"/>
+                    <complete/>
+                </listener>
+
+                <listener tid="114">
+                    <start-quest name="Взяла с пола"/>
+                    <complete/>
+                </listener>
+
+                <listener tid="124">
+                    <start-quest name="Взяла с потолка"/>
+                    <complete/>
+                </listener>
+
+            </trigger-listener>
+
+            <onEnd>
+
+            </onEnd>
+        </quest>
+    </quests>
+</level>

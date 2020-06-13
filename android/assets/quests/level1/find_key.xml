@@ -1,0 +1,20 @@
+<quest>
+    <onStart>
+        <set-visible type="subject" id="1" value="true"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="find" sid="1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <open-door id="door4"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <change-dialog ghost="1" new_dialog="2"/>
+        <set-quest-visibility quest_id="7" visibility="true"/>
+        <start-quest name="enter_room_5.xml"/>
+    </onEnd>
+</quest>

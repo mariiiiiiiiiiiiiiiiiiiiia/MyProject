@@ -1,0 +1,20 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="comeIn" room="2"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <start-monolog id="7"/>
+            <set-quest-visibility quest_id="70" visibility="true"/>
+            <start-quest name="ready_be.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+
+    </onEnd>
+</quest>

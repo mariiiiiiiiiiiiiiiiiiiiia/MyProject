@@ -1,0 +1,16 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="3:4"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

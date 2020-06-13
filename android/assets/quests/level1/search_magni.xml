@@ -1,0 +1,25 @@
+<quest>
+    <onStart>
+
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="search" sid="605" />
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <remove-type room="6" rsid="605" type="search"/>
+            <set-special-description room_subject_type="DOOR" sid="door5" text="Возвращаться глупо. Я уже включила музыку!"/>
+            <set-special-description room_subject_type="DOOR" sid="door13" text="Прямо к Иве? Ну уж нет!"/>
+            <close-door id="door5"/>
+            <close-door id="door13"/>
+            <change-main-music file="songs/casseta.mp3"/>
+            <sub-remove id="10"/>
+            <stop-another-sound/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

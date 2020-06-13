@@ -1,0 +1,20 @@
+<quest>
+    <onStart>
+        <set-visible type="subject" id="10" value="true"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="find" sid="10"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <add-type room="6" rsid="605" type="search"/>
+            <set-search-description  rsid="605" room="6" text="Отлично, теперь нужно как-то попасть в её комнату."/>
+            <set-quest-visibility quest_id="31" visibility="true"/>
+            <start-quest name="search_magni.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

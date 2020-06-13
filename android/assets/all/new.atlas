@@ -1,0 +1,875 @@
+
+new.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+InventBut
+  rotate: false
+  xy: 404, 59
+  size: 315, 278
+  orig: 315, 278
+  offset: 0, 0
+  index: -1
+hero
+  rotate: false
+  xy: 2, 2
+  size: 400, 699
+  orig: 400, 699
+  offset: 0, 0
+  index: -1
+heroStreet
+  rotate: false
+  xy: 1462, 1251
+  size: 400, 699
+  orig: 400, 699
+  offset: 0, 0
+  index: -1
+inventar_back
+  rotate: false
+  xy: 2, 703
+  size: 1458, 1247
+  orig: 1458, 1247
+  offset: 0, 0
+  index: -1
+iva
+  rotate: false
+  xy: 404, 339
+  size: 338, 362
+  orig: 338, 362
+  offset: 0, 0
+  index: -1
+lela
+  rotate: false
+  xy: 744, 378
+  size: 339, 323
+  orig: 339, 323
+  offset: 0, 0
+  index: -1
+oleandr
+  rotate: false
+  xy: 1462, 891
+  size: 331, 358
+  orig: 331, 358
+  offset: 0, 0
+  index: -1
+sheep
+  rotate: false
+  xy: 1085, 452
+  size: 270, 249
+  orig: 270, 249
+  offset: 0, 0
+  index: -1
+sheep_png
+  rotate: false
+  xy: 1085, 452
+  size: 270, 249
+  orig: 270, 249
+  offset: 0, 0
+  index: -1
+
+new2.png
+size: 4096,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+animation/Doll
+  rotate: false
+  xy: 3010, 315
+  size: 890, 309
+  orig: 890, 309
+  offset: 0, 0
+  index: -1
+animation/Doll2
+  rotate: false
+  xy: 3258, 1708
+  size: 642, 318
+  orig: 642, 318
+  offset: 0, 0
+  index: -1
+animation/Doll3
+  rotate: false
+  xy: 2, 2
+  size: 1120, 287
+  orig: 1120, 287
+  offset: 0, 0
+  index: -1
+animation/a_walk2
+  rotate: false
+  xy: 1656, 1327
+  size: 1600, 699
+  orig: 1600, 699
+  offset: 0, 0
+  index: -1
+animation/a_walkS
+  rotate: false
+  xy: 1656, 626
+  size: 1594, 699
+  orig: 1594, 699
+  offset: 0, 0
+  index: -1
+animation/animIva
+  rotate: false
+  xy: 1656, 262
+  size: 1352, 362
+  orig: 1352, 362
+  offset: 0, 0
+  index: -1
+animation/nice4
+  rotate: false
+  xy: 2, 291
+  size: 1652, 1735
+  orig: 1652, 1735
+  offset: 0, 0
+  index: -1
+animation/sheep_sleep
+  rotate: false
+  xy: 1124, 38
+  size: 270, 251
+  orig: 270, 251
+  offset: 0, 0
+  index: -1
+animation/sheep_walk
+  rotate: false
+  xy: 3258, 1457
+  size: 270, 249
+  orig: 270, 249
+  offset: 0, 0
+  index: -1
+
+new3.png
+size: 4096,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+animation/animLela
+  rotate: false
+  xy: 1328, 37
+  size: 1356, 323
+  orig: 1356, 323
+  offset: 0, 0
+  index: -1
+animation/animOleandr
+  rotate: false
+  xy: 2, 2
+  size: 1324, 358
+  orig: 1324, 358
+  offset: 0, 0
+  index: -1
+
+new4.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+buttons/hide
+  rotate: false
+  xy: 2, 2
+  size: 184, 175
+  orig: 184, 175
+  offset: 0, 0
+  index: -1
+buttons/search
+  rotate: false
+  xy: 188, 8
+  size: 184, 169
+  orig: 184, 169
+  offset: 0, 0
+  index: -1
+
+new5.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+doors/central
+  rotate: false
+  xy: 2, 2
+  size: 599, 1093
+  orig: 599, 1093
+  offset: 0, 0
+  index: -1
+doors/dark_central
+  rotate: false
+  xy: 603, 2
+  size: 599, 1093
+  orig: 599, 1093
+  offset: 0, 0
+  index: -1
+doors/left
+  rotate: false
+  xy: 1204, 4
+  size: 189, 1091
+  orig: 189, 1091
+  offset: 0, 0
+  index: -1
+doors/right
+  rotate: false
+  xy: 1395, 4
+  size: 162, 1091
+  orig: 162, 1091
+  offset: 0, 0
+  index: -1
+
+new6.png
+size: 4096,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+item/Emily
+  rotate: false
+  xy: 260, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+item/alena
+  rotate: false
+  xy: 518, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+item/box
+  rotate: false
+  xy: 2, 2
+  size: 206, 159
+  orig: 206, 159
+  offset: 0, 0
+  index: -1
+item/casseta
+  rotate: false
+  xy: 776, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+item/gift
+  rotate: false
+  xy: 1034, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+item/key
+  rotate: false
+  xy: 1292, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+item/keyDown
+  rotate: false
+  xy: 2324, 171
+  size: 256, 252
+  orig: 256, 252
+  offset: 0, 0
+  index: -1
+item/pendant
+  rotate: false
+  xy: 1550, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+item/rabbit
+  rotate: false
+  xy: 2, 163
+  size: 256, 260
+  orig: 256, 260
+  offset: 0, 0
+  index: -1
+item/stripe
+  rotate: false
+  xy: 1808, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+item/zlata
+  rotate: false
+  xy: 2066, 164
+  size: 256, 259
+  orig: 256, 259
+  offset: 0, 0
+  index: -1
+
+new7.png
+size: 4096,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC/Iva
+  rotate: false
+  xy: 2, 2
+  size: 183, 682
+  orig: 183, 682
+  offset: 0, 0
+  index: -1
+NPC/Oleandr
+  rotate: false
+  xy: 2247, 1102
+  size: 270, 837
+  orig: 270, 837
+  offset: 0, 0
+  index: -1
+NPC/fail
+  rotate: false
+  xy: 2, 686
+  size: 2243, 1253
+  orig: 2243, 1253
+  offset: 0, 0
+  index: -1
+
+new8.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR1/Basket
+  rotate: false
+  xy: 1641, 1436
+  size: 237, 306
+  orig: 237, 306
+  offset: 0, 0
+  index: -1
+SR1/Bookshelf
+  rotate: false
+  xy: 2, 583
+  size: 791, 1159
+  orig: 791, 1159
+  offset: 0, 0
+  index: -1
+SR1/Drawing1
+  rotate: false
+  xy: 795, 825
+  size: 267, 336
+  orig: 267, 336
+  offset: 0, 0
+  index: -1
+SR1/Drawing2
+  rotate: false
+  xy: 2, 274
+  size: 315, 307
+  orig: 315, 307
+  offset: 0, 0
+  index: -1
+SR1/Lamp
+  rotate: false
+  xy: 2, 2
+  size: 179, 270
+  orig: 179, 270
+  offset: 0, 0
+  index: -1
+SR1/Table
+  rotate: false
+  xy: 795, 1163
+  size: 844, 579
+  orig: 844, 579
+  offset: 0, 0
+  index: -1
+
+new9.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR10/Cup
+  rotate: false
+  xy: 2, 2
+  size: 813, 972
+  orig: 813, 972
+  offset: 0, 0
+  index: -1
+SR10/Pic
+  rotate: false
+  xy: 817, 631
+  size: 212, 343
+  orig: 212, 343
+  offset: 0, 0
+  index: -1
+SR10/kitchen
+  rotate: false
+  xy: 1031, 863
+  size: 235, 111
+  orig: 235, 111
+  offset: 0, 0
+  index: -1
+
+new10.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR11/box2
+  rotate: false
+  xy: 2, 2
+  size: 468, 823
+  orig: 468, 823
+  offset: 0, 0
+  index: -1
+SR11/box3
+  rotate: false
+  xy: 472, 38
+  size: 474, 787
+  orig: 474, 787
+  offset: 0, 0
+  index: -1
+SR11/box4
+  rotate: false
+  xy: 545, 903
+  size: 442, 1013
+  orig: 442, 1013
+  offset: 0, 0
+  index: -1
+SR11/poison
+  rotate: false
+  xy: 2, 827
+  size: 541, 1089
+  orig: 541, 1089
+  offset: 0, 0
+  index: -1
+
+new11.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR12/Basket
+  rotate: false
+  xy: 2, 70
+  size: 223, 302
+  orig: 223, 302
+  offset: 0, 0
+  index: -1
+SR12/Light
+  rotate: false
+  xy: 564, 1249
+  size: 187, 274
+  orig: 187, 274
+  offset: 0, 0
+  index: -1
+SR12/Photo
+  rotate: false
+  xy: 2, 2
+  size: 113, 66
+  orig: 113, 66
+  offset: 0, 0
+  index: -1
+SR12/PictureOleandr
+  rotate: false
+  xy: 564, 1525
+  size: 369, 485
+  orig: 369, 485
+  offset: 0, 0
+  index: -1
+SR12/Shelves
+  rotate: false
+  xy: 2, 921
+  size: 560, 1089
+  orig: 560, 1089
+  offset: 0, 0
+  index: -1
+SR12/Table
+  rotate: false
+  xy: 2, 374
+  size: 836, 545
+  orig: 836, 545
+  offset: 0, 0
+  index: -1
+
+new12.png
+size: 4096,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR13/Cupboard
+  rotate: false
+  xy: 2, 2
+  size: 688, 984
+  orig: 688, 984
+  offset: 0, 0
+  index: -1
+SR13/Emily
+  rotate: false
+  xy: 1978, 450
+  size: 339, 536
+  orig: 339, 536
+  offset: 0, 0
+  index: -1
+SR13/Sofa
+  rotate: false
+  xy: 692, 416
+  size: 641, 570
+  orig: 641, 570
+  offset: 0, 0
+  index: -1
+SR13/SofaToys
+  rotate: false
+  xy: 1335, 416
+  size: 641, 570
+  orig: 641, 570
+  offset: 0, 0
+  index: -1
+SR13/Table
+  rotate: false
+  xy: 692, 49
+  size: 340, 365
+  orig: 340, 365
+  offset: 0, 0
+  index: -1
+SR13/TableGift
+  rotate: false
+  xy: 2319, 621
+  size: 340, 365
+  orig: 340, 365
+  offset: 0, 0
+  index: -1
+
+new13.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR14/rectangle
+  rotate: false
+  xy: 2, 2
+  size: 1308, 1253
+  orig: 1308, 1253
+  offset: 0, 0
+  index: -1
+
+new14.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR2/BoxToys
+  rotate: false
+  xy: 2, 499
+  size: 615, 442
+  orig: 615, 442
+  offset: 0, 0
+  index: -1
+SR2/DrawingBrother
+  rotate: false
+  xy: 240, 282
+  size: 303, 215
+  orig: 303, 215
+  offset: 0, 0
+  index: -1
+SR2/DrawingToys
+  rotate: false
+  xy: 564, 1836
+  size: 320, 210
+  orig: 320, 210
+  offset: 0, 0
+  index: -1
+SR2/DrawingU
+  rotate: false
+  xy: 2, 150
+  size: 236, 347
+  orig: 236, 347
+  offset: 0, 0
+  index: -1
+SR2/Shelves
+  rotate: false
+  xy: 2, 943
+  size: 560, 1103
+  orig: 560, 1103
+  offset: 0, 0
+  index: -1
+SR2/Thread
+  rotate: false
+  xy: 2, 2
+  size: 247, 146
+  orig: 247, 146
+  offset: 0, 0
+  index: -1
+
+new15.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR3/Alena
+  rotate: false
+  xy: 1039, 532
+  size: 202, 377
+  orig: 202, 377
+  offset: 0, 0
+  index: -1
+SR3/Another_doll
+  rotate: false
+  xy: 1641, 691
+  size: 133, 218
+  orig: 133, 218
+  offset: 0, 0
+  index: -1
+SR3/Bench
+  rotate: false
+  xy: 2, 2
+  size: 356, 142
+  orig: 356, 142
+  offset: 0, 0
+  index: -1
+SR3/Emily
+  rotate: false
+  xy: 1243, 594
+  size: 206, 315
+  orig: 206, 315
+  offset: 0, 0
+  index: -1
+SR3/Lamp
+  rotate: false
+  xy: 618, 479
+  size: 219, 430
+  orig: 219, 430
+  offset: 0, 0
+  index: -1
+SR3/LittleWad
+  rotate: false
+  xy: 2, 403
+  size: 433, 506
+  orig: 433, 506
+  offset: 0, 0
+  index: -1
+SR3/New_doll
+  rotate: false
+  xy: 437, 360
+  size: 179, 549
+  orig: 179, 549
+  offset: 0, 0
+  index: -1
+SR3/Princess
+  rotate: false
+  xy: 1451, 579
+  size: 188, 330
+  orig: 188, 330
+  offset: 0, 0
+  index: -1
+SR3/Shefl
+  rotate: false
+  xy: 2, 146
+  size: 419, 255
+  orig: 419, 255
+  offset: 0, 0
+  index: -1
+SR3/Zlata
+  rotate: false
+  xy: 839, 524
+  size: 198, 385
+  orig: 198, 385
+  offset: 0, 0
+  index: -1
+
+new16.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR4/Bookshelf_mrl
+  rotate: false
+  xy: 581, 192
+  size: 430, 1070
+  orig: 430, 1070
+  offset: 0, 0
+  index: -1
+SR4/Curbstone
+  rotate: false
+  xy: 1013, 674
+  size: 806, 588
+  orig: 806, 588
+  offset: 0, 0
+  index: -1
+SR4/DoorFalse
+  rotate: false
+  xy: 2, 179
+  size: 577, 1083
+  orig: 577, 1083
+  offset: 0, 0
+  index: -1
+SR4/DrawingMirrow
+  rotate: false
+  xy: 1013, 96
+  size: 771, 576
+  orig: 771, 576
+  offset: 0, 0
+  index: -1
+SR4/DrawingWTF
+  rotate: false
+  xy: 1821, 926
+  size: 224, 336
+  orig: 224, 336
+  offset: 0, 0
+  index: -1
+SR4/ThingsTab
+  rotate: false
+  xy: 2, 2
+  size: 245, 175
+  orig: 245, 175
+  offset: 0, 0
+  index: -1
+
+new17.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR5/Drawing1
+  rotate: false
+  xy: 1043, 458
+  size: 307, 534
+  orig: 307, 534
+  offset: 0, 0
+  index: -1
+SR5/Drawing2
+  rotate: false
+  xy: 1352, 647
+  size: 235, 345
+  orig: 235, 345
+  offset: 0, 0
+  index: -1
+SR5/Drawing3
+  rotate: false
+  xy: 701, 175
+  size: 325, 310
+  orig: 325, 310
+  offset: 0, 0
+  index: -1
+SR5/TableFlower
+  rotate: false
+  xy: 701, 487
+  size: 340, 505
+  orig: 340, 505
+  offset: 0, 0
+  index: -1
+SR5/WadrobeRose
+  rotate: false
+  xy: 2, 2
+  size: 697, 990
+  orig: 697, 990
+  offset: 0, 0
+  index: -1
+
+new18.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR6/Magni
+  rotate: false
+  xy: 319, 489
+  size: 159, 104
+  orig: 159, 104
+  offset: 0, 0
+  index: -1
+SR6/RBookshelf
+  rotate: false
+  xy: 2, 595
+  size: 726, 1145
+  orig: 726, 1145
+  offset: 0, 0
+  index: -1
+SR6/RDrawing1
+  rotate: false
+  xy: 2, 2
+  size: 315, 282
+  orig: 315, 282
+  offset: 0, 0
+  index: -1
+SR6/RDrawing2
+  rotate: false
+  xy: 2, 286
+  size: 315, 307
+  orig: 315, 307
+  offset: 0, 0
+  index: -1
+SR6/RDrawing3
+  rotate: false
+  xy: 730, 1397
+  size: 235, 343
+  orig: 235, 343
+  offset: 0, 0
+  index: -1
+
+new19.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR7/Cake
+  rotate: false
+  xy: 692, 486
+  size: 340, 500
+  orig: 340, 500
+  offset: 0, 0
+  index: -1
+SR7/Drawing1
+  rotate: false
+  xy: 1034, 643
+  size: 235, 343
+  orig: 235, 343
+  offset: 0, 0
+  index: -1
+SR7/Skull
+  rotate: false
+  xy: 692, 104
+  size: 296, 380
+  orig: 296, 380
+  offset: 0, 0
+  index: -1
+SR7/Wadrobe2
+  rotate: false
+  xy: 2, 2
+  size: 688, 984
+  orig: 688, 984
+  offset: 0, 0
+  index: -1
+
+new20.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR8/Box
+  rotate: false
+  xy: 2, 2
+  size: 601, 412
+  orig: 601, 412
+  offset: 0, 0
+  index: -1
+SR8/Heads
+  rotate: false
+  xy: 1094, 140
+  size: 516, 274
+  orig: 516, 274
+  offset: 0, 0
+  index: -1
+SR8/list
+  rotate: false
+  xy: 605, 14
+  size: 487, 400
+  orig: 487, 400
+  offset: 0, 0
+  index: -1
+
+new21.png
+size: 1024,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SR9/CupB
+  rotate: false
+  xy: 2, 2
+  size: 805, 605
+  orig: 805, 605
+  offset: 0, 0
+  index: -1
+SR9/Fakedoor
+  rotate: false
+  xy: 2, 609
+  size: 598, 1083
+  orig: 598, 1083
+  offset: 0, 0
+  index: -1

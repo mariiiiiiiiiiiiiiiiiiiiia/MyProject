@@ -1,0 +1,1207 @@
+{
+  "house_w": 6,
+  "house_h": 4,
+  "rooms":[
+    {
+      "background": "backgrounds/blue_back.png",
+      "id": 1,
+      "x": 6,
+      "y": 3,
+      "subjects": [
+        {"id": 101,
+          "background": "SR1/Bookshelf.png",
+          "name": "Шкаф",
+          "type": ["search", "speak"],
+          "subjects": [
+
+          ],
+          "description": ["\"Есть преступление хуже, чем сжигать книги. Например - не читать их.\"", "Этот шкаф такой высокий!" , "В шкафу есть музыкальная шкатулка. Жалко, я не могу дотянуться."],
+          "x": 0.984,
+          "y": 0.316,
+          "w": 5.644,
+          "h": 8.331
+        },
+        {
+          "id": 102,
+          "background": "SR1/Table.png",
+          "name": "Стол",
+          "type": ["search", "speak"],
+          "subjects": [
+            {
+              "id": 6,
+              "background": "item/pendant",
+              "description": "Парные кулоны \"Инь и Янь\"",
+              "visible": false
+            }
+          ],
+          "description": [ "Письменный стол мальчика. Вот бы за ним порисовать!", "Может быть, внутри тебя что-то есть?"],
+          "x": 7.971,
+          "y": 0.316,
+          "w": 6.023,
+          "h": 3.817
+        },
+        {"id": 103,
+          "background": "SR1/Basket.png",
+          "name": "Корзина",
+          "type": ["search", "speak"],
+          "subjects": [
+            {
+              "id": 9,
+              "background": "item/gift",
+              "description": "Готовый подарок для Ивы. Осталось только отнести его.",
+              "visible": false
+            }
+          ],
+          "description": [ "Иногда и среди мусора можно отыскать что-то ценное!"],
+          "x": 13.5,
+          "y": 0.7,
+          "w": 1.691,
+          "h": 2.183
+        },
+        {"id": 104,
+          "background": "SR1/Drawing1.png",
+          "name": "Картина1",
+          "type": [ "speak"],
+          "description": [ "Похоже на цветы. Это ведь они, да?", "Здесь всё такое странное..." ],
+          "x": 8.592,
+          "y": 4.98,
+          "w": 1.9,
+          "h": 2.415
+        },
+        {"id": 105,
+          "background": "SR1/Drawing2.png",
+          "name": "Картина2",
+          "type": [ "speak"],
+          "description": [ "Какая интересная мозаика!","Как же здесь много картин.", "Мне определенно нравится эта девочка справа!" ],
+          "x": 10.876,
+          "y": 4.298,
+          "w": 2.247,
+          "h": 2.206
+        },
+        {
+          "id":106,
+          "background": "SR1/Lamp.png",
+          "name": "Стол",
+          "type": [ "speak"],
+          "description": [ "А есть ли здесь свет?", "Ну же, включайся, волшебная лампа!"],
+          "x": 8.556,
+          "y": 3.062,
+          "w": 1.277,
+          "h": 1.940
+        }
+
+      ]
+    },
+    {
+      "background": "backgrounds/pink_tree.png",
+      "id": 2,
+      "x": 5,
+      "y": 3,
+      "subjects":[
+        {
+          "id": 201,
+        "background": "SR2/Shelves.png",
+        "name": "ПолкаЗаяц",
+        "type": ["search", "speak"],
+        "subjects": [
+          {
+            "id": 10,
+            "background": "item/casseta",
+            "description": "Осталось только вставить её в магнитофон!",
+            "visible": "false"
+          }
+        ],
+        "description": [ "На полочках пылятся несколько кассет. Вот бы у меня был магнитофон...", "Ха-ха, здесь есть хиты 90-ых!" ],
+        "x": 6.551,
+        "y": 0.251,
+        "w": 3.996,
+        "h": 7.928
+        },
+        {
+          "id": 202,
+          "name": "КартинаЮ",
+          "type": ["speak"],
+          "description": [ "Юн Бум очень расстроен.", "Как я могу помочь тебе?", "Почему же ты плачешь?", "Глядя на тебя, мне становится грустно."],
+          "x": 13.416,
+          "y": 4.154,
+          "w": 1.684,
+          "h": 2.494,
+          "type2": "anim",
+          "animation": {
+            "atlas": "animation/nice4",
+            "anim_w": 7,
+            "anim_h": 5,
+            "vel": 0.2,
+            "anim_t": "LOOP"
+          }
+        },
+        {
+          "id": 203,
+          "name": "РисунокБрат",
+          "background": "SR2/DrawingBrother.png",
+          "type": ["speak"],
+          "description": [ "На рисунке написано: \"C днем рождения, братик!\" ", "Рисунок был порван, а затем сшит нитками. Интересно...", "В углу картинки красное пятно. Кто-то разлил сок!"],
+          "x": 4.224,
+          "y": 4.224  ,
+          "w": 2.162,
+          "h": 1.545
+        },
+        {
+          "id": 205,
+          "name": "КоробкаИгры",
+          "background": "SR2/BoxToys.png",
+          "type": ["search", "speak"],
+          "subjects": [
+            {
+              "id": 1,
+              "background": "item/key",
+              "visible": false,
+              "description": "Ключик. Может, он откроет ту дверь?"
+            }
+          ],
+          "description": [ "Вот бы посмотреть, что внутри такой большой коробки!"],
+          "place": "floor",
+          "x": 2.383 ,
+          "y": 0.035,
+          "w": 3.338,
+          "h": 3.177
+        },
+        {
+          "id": 204,
+          "name": "Рисунок2",
+          "background": "SR2/DrawingToys.png",
+          "description": [ "Снежок и Эмили? Вот так парочка!","Надеюсь, вы отлично ладите друг с другом!"],
+          "type": ["speak"],
+          "x": 2.519,
+          "y": 5.772 ,
+          "w": 2.283,
+          "h": 1.509
+        }
+      ]
+    },
+    {
+      "background": "backgrounds/lilo_back.png",
+      "id": 3,
+      "x": 5,
+      "y": 4,
+      "subjects": [
+        {
+        "id": 301,
+        "background": "SR3/Bench.png",
+        "name": "Лавочка",
+        "type": ["speak"],
+        "description": ["На лавочке сидят две замечательные куклы!"],
+        "x": 1.063,
+        "y": 1.183,
+        "w": 2.54,
+        "h": 1.02
+      },
+        {
+          "id":302,
+          "background": "SR3/Alena.png",
+          "name": "Алена",
+          "type": ["speak", "search"],
+          "subjects": [
+            {
+              "id": 4,
+              "background": "item/alena",
+              "description": "Надеюсь, эта та самая Эмили!",
+              "visible": false
+            }
+          ],
+          "description": [ "Куколка с темными волосами и очень красивым платьем!", "Она так похожа на свою соседку!"],
+          "x": 2.112,
+          "y": 0.76,
+          "w": 1.444,
+          "h": 2.71
+        },
+        {
+          "id":303,
+          "background": "SR3/Emily.png",
+          "name": "Эмили",
+          "type": ["speak", "search"],
+          "subjects": [
+            {
+              "id": 3,
+              "background": "item/Emily",
+              "description": "Темные волосы и красное платье. Хм...",
+              "visible": false
+            }
+          ],
+          "description": [ "Она сидит здесь и никого не замечает.", "Ей так грустно!"],
+          "x": 8.078,
+          "y": 0.905,
+          "w": 1.470,
+          "h": 2.264
+        },
+        {
+          "id":304,
+          "background": "SR3/Lamp.png",
+          "name": "Лампа",
+          "type": ["speak"],
+          "subjects": [],
+          "description": [ "Это лампа похожа на большой шар из ниток." ],
+          "x": 1.648,
+          "y": 5.873,
+          "w": 1.562,
+          "h": 3.09
+        },
+        {
+          "id":305,
+          "background": "SR3/Princess.png",
+          "name": "Принцесса",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": [ "Ты так высоко сидишь!", "Мне бы хотелось себе такое платье..."],
+          "x": 2.09,
+          "y": 6.29,
+          "w": 1.341,
+          "h": 2.372
+        },
+        {
+          "id":306,
+          "background": "SR3/LittleWad.png",
+          "name": "Шкафчик",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": [ "Для маленькой куклы - маленький шкаф.", "Он как будто из сказки!"],
+          "x": 4.752,
+          "y": 0.92,
+          "w": 3.1,
+          "h": 3.6
+        },
+        {
+          "id":307,
+          "background": "SR3/New_doll.png",
+          "name": "НоваяКукла",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": [ "Какая же она красивая...", "Похожа на модель!"],
+          "x": 13.6,
+          "y": 0.86,
+          "w": 1.277,
+          "h": 3.946
+        },
+        {
+          "id": 308,
+          "background": "SR3/Shefl.png",
+          "name": "полки",
+          "type": ["speak"],
+          "subjects": [],
+          "description": [ "Это настоящие ветви?"],
+          "x": 5.152,
+          "y": 5.276,
+          "w": 2.99,
+          "h": 1.833
+        },
+        {
+          "id":309,
+          "background": "SR3/Zlata.png",
+          "name": "Злата",
+          "type": ["speak", "search"],
+          "subjects": [
+            {
+              "id": 5,
+              "background": "item/zlata",
+              "description": "Надеюсь, эта та самая Эмили!",
+              "visible": false
+            }
+          ],
+          "description": [ "Куколка со светлыми волосами и очень красивым платьем!", "Она так похожа на свою соседку!"],
+          "x": 0.900,
+          "y": 0.76,
+          "w": 1.444,
+          "h": 2.71
+        },
+        {
+          "id":310,
+          "background": "SR3/Another_doll.png",
+          "name": "Кукла",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": [ "Ты так высоко!", "Раньше я тоже носила платье в горошек.", "Куколка-фигуристка, научи меня кататься на коньках!"],
+          "x": 6.194,
+          "y": 7.124,
+          "w": 0.949,
+          "h": 1.567
+        }
+
+
+      ]
+
+    },
+    {
+      "background": "backgrounds/pink_carpet.png",
+      "id": 4,
+      "x": 4,
+      "y": 3,
+      "subjects": [
+        {
+          "id": 401,
+          "background": "SR4/Bookshelf_mrl.png",
+          "name": "Полки",
+          "type": ["search", "speak"],
+          "subjects": [
+            {
+              "id": 11,
+              "background": "item/keyDown",
+              "description": "Ключик от подвала.",
+              "visible": false
+            }
+          ],
+          "song": "songs/mrl.mp3",
+          "sng" : "true",
+          "description": [ "МРЛ-МРЛ-МРЛ!", "Здравствуй, наимилейший мурлок!", "Мои родители очень любят рыболюдей."],
+          "x": 0.949,
+          "y": 0.409,
+          "w": 3.068,
+          "h": 7.636
+        },
+        {
+          "id": 402,
+          "background": "SR4/Curbstone.png",
+          "name": "Тумба",
+
+          "type": ["search", "speak"],
+          "subjects": [
+
+            {
+              "id": 2,
+              "background": "item/rabbit",
+              "visible": false,
+              "description": "Наверное, это и есть Снежок."
+            }
+          ],
+          "description": [ "Ничем непримечательная тумба."],
+          "x": 3.853,
+          "y": 0.524,
+          "w": 5.752,
+          "h": 4.226
+        },
+        {
+          "id": 403,
+          "background": "SR4/DrawingMirrow.png",
+          "name": "Зеркло",
+          "type": [ "speak"],
+          "description": [ "Сначала мне показалось, что это - настоящее зеркало.", "Похоже, владельцы дома очень любили странные вещи.", "Картина, ты разбита!"],
+          "x": 3.882,
+          "y": 4.564,
+          "w": 5.497,
+          "h": 4.140
+        },
+        {
+          "id": 404,
+          "background": "SR4/DrawingWTF.png",
+          "name": "Картина",
+          "type": [ "speak"],
+          "description": [ "Мне нравится синий цвет!", "А вот и ещё одна необычная картина."],
+          "x": 9.57,
+          "y": 4.234,
+          "w": 1.598,
+          "h": 2.415
+        },
+        {
+          "id": 405,
+          "background": "SR4/ThingsTab.png",
+          "name": "Мелочи",
+          "type": [ "speak"],
+          "description": [ "Духи со вкусом банана? Ух ты!", "Интересно, где они купили светящиеся цветы?"],
+          "x": 4.71,
+          "y": 3.824,
+          "w": 1.748,
+          "h": 1.257
+        }
+      ]
+    },
+    {
+      "background": "backgrounds/pink_back.png",
+      "id": 5,
+      "x": 3,
+      "y": 3,
+      "subjects":[
+        {
+          "id": 501,
+          "background": "SR5/WadrobeRose.png",
+          "name": "ШкафРоза",
+          "type": ["search", "speak","hide"],
+          "subjects": [],
+          "description": [ "Интересно, заменят ли такую маленькую девочку в таком огромном шкафу?"],
+          "x": 8.82,
+          "y": 0.49,
+          "w": 4.97,
+          "h": 7.138
+        },
+        {
+          "id": 502,
+          "name": "Картина1",
+          "background": "SR5/Drawing1.png",
+          "description": [ "Это же Ива и Олеандр! Только маленькие.", "Они тут выглядят такими счастливыми." ],
+          "type": ["speak"],
+          "x": 3.382,
+          "y": 3.364,
+          "w": 2.190,
+          "h": 3.874
+        },
+        {
+          "id": 503,
+          "name": "Картина2",
+          "background": "SR5/Drawing2.png",
+          "type": ["speak"],
+          "description": [ "Неразлучники? Интересно, что будет, если их разлучить..."],
+          "x": 1.284,
+          "y": 5.563,
+          "w": 1.667 ,
+          "h": 2.48
+        },
+        {
+          "id":504,
+          "name": "Картина3",
+          "background": "SR5/Drawing3.png",
+          "type": ["speak"],
+          "description": [ "Руки противятся ему... Какая пугающая картина!"],
+          "x": 1.056,
+          "y": 3.22 ,
+          "w": 2.319,
+          "h": 2.228
+        },
+        {
+          "id": 505,
+          "name": "СтолЦветок",
+          "background": "SR5/TableFlower.png",
+          "description": [ "Мама говорила, что нельзя читать чужие письма.", "Интересно, как называются эти цветы?"],
+          "type": ["search", "speak"],
+          "subjects": [
+            {
+              "id": 8,
+              "background": "item/stripe",
+              "description": "Белая шелковая лента.",
+              "visible": false
+            }
+          ],
+          "x": 0.856,
+          "y": 0.531,
+          "w": 2.426,
+          "h": 3.63
+        }
+      ]
+    },
+    {
+      "background": "backgrounds/pink_dark.png",
+      "id": 6,
+      "x": 3,
+      "y": 2,
+      "subjects": [
+        {
+        "id": 601,
+        "background": "SR6/RDrawing1.png",
+        "name": "Рисунок1",
+        "type": ["speak"],
+        "description": [ "Картина разорвана!", "Красные цвет делает её особенно пугающей."],
+        "x": 3.13,
+        "y": 3.817,
+        "w": 2.264,
+        "h": 2.02
+        },
+        {
+          "id": 602,
+          "background": "SR6/RDrawing2.png",
+          "name": "Рисунок2",
+          "type": ["speak"],
+          "description": [ "Картина разорвана!", "Красные цвет делает её особенно пугающей.", "Ужасные глаза!"],
+          "x": 1.170,
+          "y": 5.477,
+          "w": 2.264,
+          "h": 2.02
+        },
+        {
+          "id": 603,
+          "background": "SR6/RDrawing3.png",
+          "name": "Рисунок3",
+          "type": ["speak"],
+          "description": [ "Картина разорвана!", "Красные цвет делает её особенно пугающей.", "Кажется, эта девушка медленно засыпает... Или уже спит?."],
+          "x": 8.727,
+          "y": 4.03,
+          "w": 1.677,
+          "h": 2.465
+        },
+        {
+          "id": 604,
+          "background": "SR6/RBookshelf.png",
+          "name": "Шкаф2",
+          "type": ["search", "speak"],
+          "subjects": [],
+          "description": [ "Кулинарные книги? Должно быть, в этом доме вкусно готовят!", "Сколько же игрушек было у Ивы?"],
+          "x": 9.7,
+          "y": 0.222,
+          "w": 5.121,
+          "h": 8.424
+                },
+        {
+          "id": 605,
+          "background": "SR6/Magni.png",
+          "name": "Магнитофон",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": [ "Ого, магнитофон!",  "Папа говорил, что люди туда вставляют кассету и музыка начинает играть!"],
+          "x": 11.261,
+          "y": 3.673,
+          "w": 1.135,
+          "h": 0.738
+        }
+      ]
+    },
+    {
+      "background": "backgrounds/red_dark.png",
+      "id": 7,
+      "x": 4,
+      "y": 2,
+      "subjects": [
+        {
+          "id": 701,
+          "background": "SR7/Drawing1.png",
+          "name": "Рисунок1",
+          "type": ["speak"],
+          "description": [ "Картина разорвана!", "Этот мальчик очень похож на Олеандра.", "Похоже, его  клонит в сон." ],
+          "x": 7.686,
+          "y": 3.982,
+          "w": 1.805,
+          "h": 2.465
+        },
+        {
+          "id": 702,
+          "background": "SR7/Skull.png",
+          "name": "Рисунок2",
+          "type": ["speak"],
+          "description": [ "\"Кто мы, если не рабы вечного страдания?\""],
+          "x": 1.285,
+          "y": 3.458,
+          "w": 2.112,
+          "h": 2.732
+        },
+        {
+          "id": 703,
+          "background": "SR7/Cake.png",
+          "name": "Торт",
+          "type": ["speak"],
+          "description": [ "Клубничный торт со сливками -  любимый торт моей мамы.", "Интересно, сколько он тут стоит? Но выглядит, как свежий!"],
+          "x": 7.336,
+          "y": 0.589,
+          "w": 2.426,
+          "h": 3.515
+        },
+        {
+          "id": 704,
+          "background": "SR7/Wadrobe2.png",
+          "name": "Шкаф2",
+          "type": ["search", "speak","hide"],
+          "subjects": [
+            {
+              "id": 7,
+              "background": "item/box",
+              "description": "Очень красивая коробка.",
+              "visible": false
+            }
+          ],
+          "description": [ "Интересно, заменят ли такую маленькую девочку в таком огромном шкафу?"],
+          "x": 9.5,
+          "y": 0.49,
+          "w": 4.97,
+          "h": 7.138
+        }
+      ]
+    },
+    {
+      "background": "backgrounds/bassementright.png",
+      "id": 8,
+      "x": 4,
+      "y": 1,
+      "subjects": [
+        {
+          "id": 801,
+          "name": "Кукла1",
+          "type2": "anim",
+          "animation": {
+            "atlas": "animation/Doll",
+            "anim_w": 5,
+            "anim_h": 1,
+            "vel": 0.1,
+            "anim_t": "LOOP_RANDOM"
+          },
+          "type": [ "speak"],
+          "description": ["Почему они двигаются сами по себе?"],
+          "x": 12.08,
+          "y": 4.011,
+          "w": 1.270,
+          "h": 2.221
+        },
+        {
+          "id": 802,
+          "name": "Кукла3",
+          "type2": "anim",
+          "animation": {
+            "atlas": "animation/Doll3",
+            "anim_w": 8,
+            "anim_h": 1,
+            "vel": 0.1,
+            "anim_t": "LOOP_RANDOM"
+          },
+          "type": [ "speak"],
+          "description": ["Почему они двигаются сами по себе?"],
+          "x": 13.61,
+          "y": 5.966,
+          "w": 0.999,
+          "h": 2.063
+        },
+        {
+          "id": 803,
+          "background": "SR8/Heads.png",
+          "name": "Парики",
+          "type": ["speak"],
+          "description": [ "Эти манекены меня пугают...",  "Какие странные!"],
+          "x": 7.1,
+          "y": 5.56,
+          "w": 3.68,
+          "h": 1.96
+        },
+        {
+          "id": 804,
+          "background": "SR8/list.png",
+          "name": "Инструкция",
+          "type": ["speak"],
+          "description": [ "Здесь написано, как надо ухаживать за париками.",  "Так много текста, мне тяжело это прочитать!"],
+          "x": 7.16,
+          "y": 2.46,
+          "w": 3.47,
+          "h": 2.87
+        },
+        {
+          "id": 805,
+          "background": "SR8/Box.png",
+          "name": "Короббка",
+          "type": ["speak"],
+          "description": [ "Внутри лежат волосы...",  " Я даже не хочу там лазить!"],
+          "x": 11.096,
+          "y": 0.3,
+          "w": 4.28,
+          "h": 2.94
+        }
+
+
+      ]
+    },
+    {
+      "background": "backgrounds/bassementText.png",
+      "id": 9,
+      "x": 3,
+      "y": 1,
+      "subjects": [
+        {
+          "id": 901,
+          "background": "SR9/Fakedoor.png",
+          "name": "ФейкДверь",
+          "type": ["speak"],
+          "description": [ "Похоже, недавно здесь побывала полиция...",  "Что же произошло?"],
+          "x": 8.35,
+          "y": 0.56,
+          "w": 4.28,
+          "h": 7.8
+        },
+        {
+          "id": 902,
+          "background": "SR9/CupB.png",
+          "name": "CupB",
+          "type": ["speak","search" ],
+          "subjects": [],
+          "description": [ "Просто тумба..."],
+          "x": 2.5,
+          "y": 0.45,
+          "w": 5.7,
+          "h": 4.35
+        },
+        {
+          "id": 1103,
+          "background": "SR10/kitchen.png",
+          "name": "kitchen",
+          "type": ["speak"],
+          "subjects": [],
+          "description": [ "Кухня!"],
+          "x": 12.7,
+          "y": 6,
+          "w": 1.7,
+          "h": 0.85
+        }
+      ]
+    },
+    {
+      "background": "backgrounds/bassementCentral.png",
+      "id": 10,
+      "x": 2,
+      "y": 1,
+      "subjects": [
+        {
+          "id": 1001,
+          "background": "SR11/box2.png",
+          "name": "box2",
+          "type": ["speak","search"],
+          "subjects": [],
+          "description": [ "Как много коробок....", "В них хранятся продукты!"],
+          "x": 1,
+          "y": 0,
+          "w": 3.3,
+          "h": 5.9
+        },
+        {
+          "id": 1002,
+          "background": "SR11/box3.png",
+          "name": "box3",
+          "type": ["speak","search"],
+          "subjects": [],
+          "description": [ "Как много коробок....", "В них хранятся продукты!"],
+          "x": 4,
+          "y": 0.4,
+          "w": 3.3,
+          "h": 5.6
+        },
+        {
+          "id": 1003,
+          "background": "SR11/box4.png",
+          "name": "box4",
+          "type": ["speak","search"],
+          "subjects": [],
+          "description": [ "Как много коробок....", "В них хранятся продукты!"],
+          "x": 11,
+          "y": 0,
+          "w": 3.14,
+          "h": 7.28
+        },
+        {
+          "id": 1004,
+          "background": "SR11/poison.png",
+          "name": "poison",
+          "type": ["speak","search"],
+          "subjects": [],
+          "description": [ "На полочке лежит пакетик. Там еда для крыс!", "Похоже, дом мучали грызуны."],
+          "x": 7,
+          "y": 0.2,
+          "w": 3.86,
+          "h": 7.83
+        }
+
+      ]
+    },
+    {
+      "background": "backgrounds/bassementleft.png",
+      "id": 11,
+      "x": 1,
+      "y": 1,
+      "subjects": [
+        {
+        "id": 1101,
+        "background": "SR10/Cup.png",
+        "name": "Cup",
+        "type": ["speak","search", "hide"],
+        "subjects": [],
+        "description": [ "Интересно, заменят ли такую маленькую девочку в таком огромном шкафу?"],
+        "x": 1,
+        "y": 0.4,
+        "w": 5.8,
+        "h": 7
+      },
+      {
+          "id": 1102,
+          "background": "SR10/Pic.png",
+          "name": "Pic",
+          "type": ["speak"],
+
+          "description": [ "Еще одна глупая картина..."],
+          "x": 7.3,
+          "y": 3.982,
+          "w": 1.805,
+          "h": 2.7
+        }
+
+      ]
+    },
+
+    {
+      "background": "backgrounds/green_back.png",
+      "id": 12,
+      "x": 1,
+      "y": 2,
+      "subjects": [
+        {
+      "id": 1201,
+      "background": "SR12/Table.png",
+      "name": "Cтол",
+      "type": ["speak", "search"],
+      "subjects": [],
+      "description": [ "Наверное, это стол мамы Олеандра и Ивы", "Вот бы за ним порисовать!"],
+      "x": 1.06,
+      "y": 0.16,
+      "w": 5.96,
+      "h": 3.92
+         },
+        {
+          "id": 1202,
+          "background": "SR12/Basket.png",
+          "name": "Корзина",
+          "type": ["search", "speak"],
+          "subjects": [],
+          "description": [ "Иногда и среди мусора можно отыскать что-то ценное!"],
+          "x": 6.615,
+          "y": 0.7,
+          "w": 1.691,
+          "h": 2.183
+        },
+        {
+          "id": 1203,
+          "background": "SR12/Light.png",
+          "name": "Лампа",
+          "type": ["speak"],
+          "description": [ "Лампа"],
+          "x": 4.75,
+          "y": 2.99,
+          "w": 1.33,
+          "h": 1.97
+        },
+        {
+          "id": 1204,
+          "background": "SR12/Photo.png",
+          "name": "Фото",
+          "type": ["speak"],
+          "description": [ "Неужели этот мама Ивы и Олеандра?", "Хах, Ива в солнечных очках!"],
+          "x": 2.04,
+          "y": 3.4,
+          "w": 0.81,
+          "h": 0.47
+        },
+        {
+          "id": 1205,
+          "background": "SR12/PictureOleandr.png",
+          "name": "КартинаОлеандра",
+          "type": ["speak"],
+          "description": [ "Здесь он выглядит гораздо лучше... и не такой вредный!"],
+          "x": 2.75,
+          "y": 4.23,
+          "w": 2.633,
+          "h": 3.49
+        },
+        {
+          "id": 1206,
+          "background": "SR12/Shelves.png",
+          "name": "Полочки",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": ["Похоже, в этой семье любят читать"],
+          "x": 11.09,
+          "y": 0.4,
+          "w": 3.99,
+          "h": 7.83
+        }
+      ]
+    },
+    {
+      "background": "backgrounds/lilo_Iva.png",
+      "id": 13,
+      "x": 2,
+      "y": 2,
+      "subjects": [
+        {
+        "id":1301,
+        "background": "SR13/Cupboard.png",
+        "name": "ШкафРоза",
+        "type": [ "speak","hide"],
+        "description": [ "Интересно, заменят ли такую маленькую девочку в таком огромном шкафу?"],
+        "x": 4.531,
+        "y": 0.49,
+        "w": 4.97,
+        "h": 7.138
+        },
+        {
+        "id": 1302,
+        "background": "SR13/Emily.png",
+        "name": "Эмили",
+        "type": ["speak"],
+
+        "description": [ "Это картина говорит со мной.","Вот бы понять её шепот..."],
+          "song": "songs/whisp.mp3",
+          "sng" : "true",
+        "x": 1.498,
+        "y": 3.666,
+        "w": 2.419,
+        "h": 3.853
+        },
+        {
+          "id":1303,
+          "background": "SR3/Lamp.png",
+          "name": "Лампа",
+          "type": ["speak"],
+          "subjects": [],
+          "description": [ "Это лампа похожа на большой шар из ниток." ],
+          "x": 11.59,
+          "y": 5.873,
+          "w": 1.562,
+          "h": 3.09
+        },
+        {
+          "id":1304,
+          "background": "SR13/Sofa.png",
+          "name": "Диванчик",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": [ "Какой красивый диван. Иве ужасно повезло!" ],
+          "x": 10.03,
+          "y": 0.1,
+          "w": 4.574,
+          "h": 4.097
+        },
+        {
+          "id":1305,
+          "background": "SR13/Table.png",
+          "name": "Столик",
+          "type": ["speak", "search"],
+          "subjects": [],
+          "description": [ "Столик!" ],
+          "x": 1.475,
+          "y": 0.4,
+          "w": 2.43,
+          "h": 2.62
+        }
+
+      ]
+    },
+    {
+      "background": "backgrounds/street.png",
+      "id": 14,
+      "x": 3,
+      "y": 5,
+      "subjects": [
+        {
+          "id": 1,
+          "background": "SR14/rectangle.png",
+          "name": "Тьма",
+          "type": ["speak"],
+          "subjects": [],
+          "description": [ "Тьма пугает меня", "Я ни за что не вернусь!"],
+          "x": 0,
+          "y": 0,
+          "w": 9.334,
+          "h": 8.942
+        }
+
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "door1",
+      "type": "typical",
+      "from": 2,
+      "to": 1,
+      "visible": "true"
+    },
+    {
+      "id": "door2",
+      "type": "central",
+      "from": 2,
+      "to": 3,
+      "visible": "true",
+      "x": 9.812
+    },
+    {
+      "id": "door3",
+      "type": "typical",
+      "from": 4,
+      "to": 2,
+      "visible": "true"
+    },
+    {
+      "id": "door4",
+      "type": "typical",
+      "from": 5,
+      "to": 4,
+      "visible": "true",
+      "close": "true"
+    },
+    {
+      "id": "door5",
+      "type": "central",
+      "from": 5,
+      "to": 6,
+      "visible": "true",
+      "x" : 4.845
+    },
+    {
+      "id": "door6",
+      "type": "typical",
+      "from": 6,
+      "to": 7,
+      "visible": "true"
+    },
+    {
+      "id": "door7",
+      "type": "central",
+      "from": 7,
+      "to": 8,
+      "visible": "true",
+      "x" : 3
+    },
+    {
+      "id": "door8",
+      "type": "typical",
+      "from": 9,
+      "to": 8,
+      "visible": "true",
+      "x" : 8.463
+    },
+    {
+      "id": "door9",
+      "type": "typical",
+      "from": 10,
+      "to": 9,
+      "visible": "true"
+    },
+    {
+      "id": "door10",
+      "type": "typical",
+      "from": 11,
+      "to": 10,
+      "visible": "true"
+    },
+    {
+      "id": "door11",
+      "type": "central",
+      "from": 11,
+      "to": 12,
+      "visible": "true",
+      "x" : 8.16
+    },
+    {
+      "id": "door12",
+      "type": "typical",
+      "from": 12,
+      "to": 13,
+      "visible": "true",
+      "x" : 9
+    },
+    {
+      "id": "door13",
+      "type": "typical",
+      "from": 13,
+      "to": 6,
+      "visible": "true"
+    },
+    {
+      "id": "door14",
+      "type": "street",
+      "from": 4,
+      "to": 14,
+      "visible": "true",
+      "close": "false",
+      "x" : 10.74
+    }
+
+
+  ],
+  "hero" : {
+    "stand_image": "hero",
+    "x": 12,
+    "animation": {
+      "atlas": "animation/animLela",
+      "anim_w": 4,
+      "anim_h": 1,
+      "vel": 0.3,
+      "anim_t":"LOOP"
+    },
+    "walk_anim" : {
+      "atlas": "animation/a_walk2",
+
+      "vel": 0.1,
+      "anim_w": 4,
+      "anim_h": 1
+    },
+    "phrases": {
+      "found":["Кажется, я что-то нашла!",
+        "Я вижу что-то полезное.",
+        "Думаю, мне это пригодится."
+      ],
+      "not_found":["Здесь только хлам.",
+        "Абсолютно ничего интересного...",
+        "Мне здесь ничего не нравится!"
+      ]
+    }
+  },
+  "sheep" : {
+    "stand_image": "hero",
+    "x": 5,
+    "y": 3,
+    "animation": {
+      "atlas": "animation/animLela",
+      "anim_w": 4,
+      "anim_h": 1,
+      "vel": 0.3,
+      "anim_t":"LOOP"
+    },
+    "walk_anim" : {
+      "atlas": "animation/a_walk2",
+
+      "vel": 0.1,
+      "anim_w": 4,
+      "anim_h": 1
+    },
+    "phrases": {
+      "found":["Кажется, я что-то нашла!",
+        "Я вижу что-то полезное.",
+        "Думаю, мне это пригодится."
+      ],
+      "not_found":["Здесь только хлам.",
+        "Абсолютно ничего интересного...",
+        "Мне здесь ничего не нравится!"
+      ]
+    }
+  },
+  "ghosts": [
+    {
+      "id": 1,
+      "name": "Олеандр",
+      "w": 1.926,
+      "h": 6.016,
+      "background": "NPC/Oleandr",
+      "face_image": "oleandr",
+      "animation": {
+        "atlas": "animation/animOleandr",
+        "anim_w": 4,
+        "anim_h": 1,
+        "vel": 0.3,
+        "anim_t":"LOOP"
+      },
+      "start_position": {
+        "room": 1,
+        "x": 13.252,
+        "y": 0.316
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ива",
+      "w": 1.556,
+      "h": 5.882,
+      "isBad": true,
+      "face_image": "iva",
+      "animation": {
+        "atlas": "animation/animIva",
+        "anim_w": 4,
+        "anim_h": 1,
+        "vel": 0.3,
+        "anim_t": "LOOP"
+      },
+      "background": "NPC/Iva",
+      "start_position": {
+        "room": 5,
+        "x": 2.858,
+        "y": 0.250
+      }
+    }
+  ]
+
+}

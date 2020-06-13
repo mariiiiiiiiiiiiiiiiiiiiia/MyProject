@@ -1,0 +1,17 @@
+<quest>
+    <onStart>
+        <end-level/>
+    </onStart>
+
+    <triggers>
+
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

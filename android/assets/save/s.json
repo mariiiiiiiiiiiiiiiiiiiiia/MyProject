@@ -1,0 +1,61 @@
+{
+  "quest": {
+    "step": 1,
+    "level":"quests/level1",
+    "global_triggers" : [
+      {
+        "tid":101,
+        "enabled":true
+      }
+    ],
+    "quest_visibility":[
+      {
+        "name":"sdcsd.xml",
+        "visible":true
+      }
+    ]
+  },
+  "hero" : {
+    "x": 1,
+    "room": 1,
+    "inv": [
+      1, 2, 3
+    ]
+  },
+  "ghosts": [
+    {
+      "id":1,
+      "x":1.2,
+      "room":1,
+      "current_dialog":1
+    }
+  ],
+  "doors": [
+    {
+      "id":"door14",
+      "specialDescription":null,
+      "visible":false,
+      "closed":false
+    }
+  ],
+  "subjects": [
+    {
+      "id":1,
+      "rs_id":3,
+      "visible": false
+    }
+  ],
+  "room_subjects" :[
+    {
+      "id":1,
+      "visible":false,
+      "texture":"SR1/gift",
+      "types": [
+        "hide", "search"
+      ],
+      "specialDescription" : "kjb",
+      "specialSearchDescription" : "kjb"
+    }
+  ]
+
+}

@@ -1,0 +1,18 @@
+<quest>
+    <onStart>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="catch" />
+    </triggers>
+    <trigger-listeners>
+        <listener tid="1">
+            <start-quest name="talk_boy_toys.xml"/>
+            <open-door id="door1"/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+
+    <onEnd>
+    </onEnd>
+</quest>

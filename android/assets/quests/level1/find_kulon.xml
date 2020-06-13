@@ -1,0 +1,23 @@
+<quest>
+    <onStart>
+
+        <set-visible type="subject" id="6" value="true"/>
+        <set-search-description  rsid="102" room="1" text="А вот и кулоны! Думаю, мне стоит упаковать их."/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="find" sid="6"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-quest-visibility quest_id="25" visibility="true"/>
+            <start-quest name="find_strech.xml"/>
+            <set-quest-visibility quest_id="26" visibility="true"/>
+            <start-quest name="find_box.xml"/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

@@ -1,0 +1,24 @@
+<quest>
+    <onStart>
+        <close-door id="door12"/>
+        <close-door id="door13"/>
+        <set-special-description room_subject_type="DOOR" sid="door12" text="Скорее в шкаф, пока Ива не пришла!"/>
+        <set-special-description room_subject_type="DOOR" sid="door13" text="Скорее в шкаф, пока Ива не пришла!"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="hide" rsid="1301" />
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <start-cut-scene sceneId="1"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+        <open-door id="door12"/>
+        <open-door id="door13"/>
+        <set-quest-visibility quest_id="21" visibility="true"/>
+        <start-quest name="talk_boy_gift.xml"/>
+    </onEnd>
+</quest>

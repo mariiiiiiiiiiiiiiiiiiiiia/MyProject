@@ -1,0 +1,25 @@
+<quest>
+    <onStart>
+        <set-special-description room_subject_type="DOOR" sid="door14" text="Я не хочу на улицу!"/>
+    </onStart>
+    <triggers>
+        <trigger id="1" type="comeIn" room="1"/>
+        <trigger id="2" type="click" room_subject_type="DOOR" sid="door4" />
+    </triggers>
+    <trigger-listeners>
+        <listener tid="1">
+            <start-dialog id="1" ghost="1"/>
+            <!--<end-level/>-->
+            <try-increment-step />
+        </listener>
+        <listener tid="2">
+            <set-quest-visibility quest_id="2" visibility="true"/>
+            <start-quest name="enter_room_1(1).xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>
+
+
+

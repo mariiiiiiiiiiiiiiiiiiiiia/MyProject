@@ -1,0 +1,25 @@
+<quest>
+    <onStart>
+
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="search" sid="1304" />
+
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <remove-type room="13" rsid="1304" type="search"/>
+            <sub-remove id="3"/>
+            <sub-remove id="2"/>
+            <change-background-roomsub name="SR13/SofaToys" room="13" rsid="1304"/>
+
+            <set-quest-visibility quest_id="19" visibility="true"/>
+            <start-quest name="hide_in_wadrobe.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

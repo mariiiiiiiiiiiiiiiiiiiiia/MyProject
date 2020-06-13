@@ -1,0 +1,19 @@
+<quest>
+    <onStart>
+        <set-visible type="subject" id="7" value="true"/>
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="find" sid="7"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <set-quest-visibility quest_id="39" visibility="false"/>
+            <try-increment-step />
+            <set-quest-visibility quest_id="39" visibility="true"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>

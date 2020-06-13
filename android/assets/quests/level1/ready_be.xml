@@ -1,0 +1,30 @@
+<quest>
+    <onStart>
+        <add-type room="6" rsid="605" type="search"/>
+        <set-search-description  rsid="605" room="6" text="..."/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="203" room="2" text="С днем рождения... братик? И почему же рисунок порван..."/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="502" room="5" text="Здесь Ива и Олеандр горазло младше..."/>
+        <set-search-description room_subject_type="ROOM_SUBJECT" rsid="505" room="5" text=" &quot;Прости, но я больше не могу оставатьcя в этом доме. Я слишком любила своих ангелков,  и мысль о том, что их больше нет, разрывает мне сердце.&quot;" />
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="603" room="6" text="Почему же она уснула навечно?"/>
+        <set-search-description  rsid="604" room="6" text="В одной из книг обведен рецепт праздничного торта."/>
+        <set-special-description room_subject_type="ROOM_SUBJECT" sid="703" room="7" text="Разве Иве исполнялось десять?"/>
+        <set-search-description  rsid="1201" room="12" text=" В записке говорится о том, что  им нужен был мастер для ремонта вытяжки...Странно, почему она до сих пор тут."/>
+
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="search" sid="605" />
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+
+            <change-main-music file="songs/song2.mp3"/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+
+    </onEnd>
+</quest>

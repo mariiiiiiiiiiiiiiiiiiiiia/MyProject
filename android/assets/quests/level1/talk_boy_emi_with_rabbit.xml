@@ -1,0 +1,26 @@
+<quest>
+    <onStart>
+        <change-dialog ghost="1" new_dialog="16"/>
+
+    </onStart>
+
+    <triggers>
+        <trigger id="1" type="talk" dialog="16:1"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <change-dialog ghost="1" new_dialog="17"/>
+            <close-door id="door7"/>
+            <close-door id="door11"/>
+            <teleport-ghost ghost="2" room="9" x="7"/>
+            <change-start-point ghost="2" room="9" x="7"/>
+            <set-search-description  rsid="1304" room="13" text="Я положила игрушки на диван. Нужно срочно спрятаться!"/>
+            <set-quest-visibility quest_id="18" visibility="true"/>
+            <start-quest name="toys.xml"/>
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+
+    </onEnd>
+</quest>

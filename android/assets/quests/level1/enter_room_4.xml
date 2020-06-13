@@ -1,0 +1,30 @@
+<quest>
+    <onStart>
+    </onStart>
+    <triggers>
+        <trigger id="1" type="comeIn" room="4"/>
+    </triggers>
+
+    <trigger-listeners>
+        <listener tid="1">
+            <close-door id="door4"/>
+            <start-monolog id="1"/>
+            <turn-trigger enabled="false" tid="103"/>
+            <turn-trigger enabled="false" tid="104"/>
+            <turn-trigger enabled="false" tid="105"/>
+            <turn-trigger enabled="false" tid="106"/>
+            <remove-type room="6" rsid="605" type="search"/>
+            <remove-type room="3" rsid="302" type="search"/>
+            <remove-type room="3" rsid="303" type="search"/>
+            <remove-type room="3" rsid="305" type="search"/>
+            <remove-type room="3" rsid="307" type="search"/>
+            <remove-type room="3" rsid="309" type="search"/>
+            <remove-type room="3" rsid="310" type="search"/>
+            <change-dialog ghost="2" new_dialog="5"/>
+            <set-special-description room_subject_type="DOOR" sid="door14" text="Я не хочу на улицу. Там так холодно!"/>
+            <try-increment-step />
+        </listener>
+    </trigger-listeners>
+    <onEnd>
+    </onEnd>
+</quest>
